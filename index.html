@@ -366,25 +366,30 @@
                 </div>
                 <div class="glass p-12 rounded-[2.5rem] border border-white/10 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-electricBlue/10 blur-3xl -mr-16 -mt-16"></div>
-                    <h4 class="text-2xl font-black mb-8 italic">Have a project?</h4>
-                    <div id="contact-success" class="hidden flex flex-col items-center text-center py-12">
+                    <!-- Contenedor de Éxito (Manejado por Formspree) -->
+                    <div data-fs-success class="hidden flex flex-col items-center text-center py-12">
                         <div class="w-20 h-20 bg-electricBlue/10 rounded-full flex items-center justify-center text-electricBlue mb-6">
                             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                         </div>
                         <h4 class="text-2xl font-black mb-4 italic">Message Sent!</h4>
                         <p class="text-slate-400 font-light">We'll get back to you shortly at the email provided.</p>
-                        <button onclick="resetForm()" class="mt-8 text-electricBlue text-sm font-bold hover:underline">Send another message</button>
                     </div>
-                    <form id="contact-form" action="https://formspree.io/f/mzdovkyr" method="POST" class="space-y-6">
+
+                    <!-- Contenedor de Error (Manejado por Formspree) -->
+                    <div data-fs-error class="hidden text-red-400 text-sm mb-6 p-4 bg-red-400/10 border border-red-400/20 rounded-2xl">
+                        Oops! There was a problem sending your message. Please try again.
+                    </div>
+
+                    <form id="contact-form" class="space-y-6">
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                            <input type="email" name="email" required placeholder="name@company.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
+                            <input type="email" name="email" required data-fs-field placeholder="name@company.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
                         </div>
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Message</label>
-                            <textarea rows="3" name="message" required placeholder="Tell us briefly about your idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
+                            <textarea rows="3" name="message" required data-fs-field placeholder="Tell us briefly about your idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
                         </div>
-                        <button type="submit" class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20">Send Proposal</button>
+                        <button type="submit" data-fs-submit-btn class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20 disabled:opacity-50 disabled:cursor-not-allowed">Send Proposal</button>
                     </form>
                 </div>
             </div>
@@ -403,33 +408,16 @@
     </footer>
 
     <script>
-        const form = document.getElementById('contact-form');
-        const success = document.getElementById('contact-success');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const data = new FormData(form);
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-            
-            if (response.ok) {
-                form.classList.add('hidden');
-                success.classList.remove('hidden');
-                form.reset();
-            } else {
-                alert('Oops! There was a problem sending your message. Please try again.');
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { 
+            formElement: '#contact-form', 
+            formId: 'mzdovkyr',
+            onSuccess: function() {
+                // Opcional: acciones adicionales tras el éxito
+                console.log('Form submitted successfully');
             }
         });
-
-        function resetForm() {
-            form.classList.remove('hidden');
-            success.classList.add('hidden');
-        }
     </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
