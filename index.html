@@ -85,9 +85,69 @@
             animation-duration: 30s;
             animation-delay: -10s;
         }
+        .blob-3 {
+            bottom: 10%;
+            left: -5%;
+            animation-duration: 30s;
+            animation-delay: -10s;
+        }
+
+        /* Splash Screen Styles */
+        #splash-screen {
+            position: fixed;
+            inset: 0;
+            background: #0a0a0b;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s ease, visibility 0.8s;
+        }
+        .splash-logo {
+            width: 120px;
+            height: 120px;
+            animation: splash-pulse 2s ease-in-out infinite;
+        }
+        @keyframes splash-pulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.2)); opacity: 0.8; }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 40px rgba(34, 211, 238, 0.6)); opacity: 1; }
+        }
+        .hide-splash {
+            opacity: 0;
+            visibility: hidden;
+        }
+        body.loading {
+            overflow: hidden;
+        }
     </style>
 </head>
-<body class="font-sans antialiased overflow-x-hidden">
+<body class="font-sans antialiased overflow-x-hidden loading">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="flex flex-col items-center gap-8">
+            <img src="./assets/images/logo.png" alt="Arandu Labs" class="splash-logo">
+            <div class="h-1 w-48 bg-white/5 rounded-full overflow-hidden">
+                <div class="h-full bg-electricBlue animate-[loading_2s_ease-in-out_infinite]"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                splash.classList.add('hide-splash');
+                document.body.classList.remove('loading');
+            }, 2000); // Mínimo 2 segundos de animación
+        });
+    </script>
 
     <!-- Header / Nav -->
     <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 glass">
