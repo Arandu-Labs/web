@@ -58,25 +58,64 @@
             height: 1px;
             background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
         }
+        /* Ajuste 10: Elementos dinámicos */
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 20s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(100px, 50px) scale(1.1); }
+        }
+        .blob-2 {
+            top: 20%;
+            right: -10%;
+            animation-duration: 25s;
+            animation-delay: -5s;
+        }
+        .blob-3 {
+            bottom: 10%;
+            left: -5%;
+            animation-duration: 30s;
+            animation-delay: -10s;
+        }
     </style>
 </head>
 <body class="font-sans antialiased overflow-x-hidden">
 
     <!-- Header / Nav -->
     <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 glass">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="./assets/images/logo-nav.png" alt="Arandu Labs Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-                <span class="text-xl font-bold tracking-tight">Arandu Labs</span>
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <!-- Ajuste 2: Más importancia al logo -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <img src="./assets/images/logo-nav.png" alt="Arandu Labs Logo" class="relative w-14 h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
+                </div>
             </div>
             <div class="hidden md:flex gap-10 text-sm font-medium text-slate-400">
                 <a href="#filosofia" class="hover:text-electricBlue transition-all">Filosofía</a>
                 <a href="#soluciones" class="hover:text-electricBlue transition-all">Soluciones</a>
                 <a href="#equipo" class="hover:text-electricBlue transition-all">Equipo</a>
                 <a href="#contacto" class="hover:text-electricBlue transition-all">Contacto</a>
-                <div class="border-l border-white/10 ml-2 pl-4 flex gap-3 text-xs font-bold items-center">
-                    <span class="text-white">ES</span>
-                    <a href="en/index.html" class="hover:text-electricBlue transition-all">EN</a>
+                <!-- Ajuste 1: Banderas en el selector de idioma -->
+                <div class="border-l border-white/10 ml-2 pl-4 flex gap-4 text-xs font-bold items-center">
+                    <span class="flex items-center gap-1.5 text-white bg-white/5 px-2 py-1 rounded-md">
+                        <span>🇪🇸</span> ES
+                    </span>
+                    <a href="en/index.html" class="flex items-center gap-1.5 hover:text-electricBlue transition-all opacity-60 hover:opacity-100">
+                        <span>🇺🇸</span> EN
+                    </a>
                 </div>
             </div>
             <a href="#contacto" class="px-6 py-2.5 bg-electricBlue/10 text-electricBlue border border-electricBlue/30 rounded-full text-sm font-bold hover:bg-electricBlue hover:text-dark transition-all duration-300 shadow-lg shadow-electricBlue/5">
@@ -86,20 +125,27 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-48 pb-32 px-6 hero-bg">
-        <div class="max-w-5xl mx-auto text-center">
+    <section class="relative pt-48 pb-32 px-6 hero-bg overflow-hidden">
+        <!-- Ajuste 10: Elementos dinámicos -->
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
             <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter">
                 Arandu Labs LLC: <br>
                 <span class="text-gradient">Soluciones Digitales de Alta Utilidad</span>
             </h1>
             <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
-                Desarrollamos aplicaciones livianas y precisas diseñadas para resolver problemas específicos del día a día, enfocadas en la eficiencia y la privacidad.
+                <!-- Ajuste 3: Redacción con más estilo -->
+                Desarrollamos aplicaciones livianas y precisas pensadas para resolver problemas cotidianos, enfocadas en la eficiencia y la privacidad.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#soluciones" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/30 hover:scale-105 active:scale-95 transition-all">
+                <!-- Ajuste 4: Ambos botones mismo color -->
+                <a href="#soluciones" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
                     Nuestras Apps
                 </a>
-                <a href="#filosofia" class="px-10 py-5 glass text-white font-bold rounded-2xl hover:bg-white/10 transition-all border border-white/10">
+                <a href="#filosofia" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
                     Saber Más
                 </a>
             </div>
@@ -139,7 +185,8 @@
                     <div class="w-14 h-14 mb-6 rounded-2xl bg-electricBlue/10 flex items-center justify-center text-electricBlue">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"></path></svg>
                     </div>
-                    <h3 class="text-lg font-bold mb-3">Código Artesanal</h3>
+                    <!-- Ajuste 5: Código Artesanal -> Ingeniería de Autor -->
+                    <h3 class="text-lg font-bold mb-3">Ingeniería de Autor</h3>
                     <p class="text-sm text-slate-400 leading-relaxed font-light">Calidad premium en cada línea. Detalles pulidos para una experiencia de usuario superior.</p>
                 </div>
             </div>
@@ -150,7 +197,8 @@
     <section id="soluciones" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 text-center">
-                <h2 class="text-4xl md:text-5xl font-black mb-6">Nuestras Familias</h2>
+                <!-- Ajuste 7: Reemplazar Nuestras Familias -->
+                <h2 class="text-4xl md:text-5xl font-black mb-6">Nuestra familia de productos</h2>
                 <div class="w-24 h-1.5 bg-electricBlue rounded-full mx-auto"></div>
             </div>
 
@@ -181,7 +229,8 @@
                         Control total sobre tus finanzas. Herramientas intuitivas para la gestión del ahorro y la inversión, sin suscripciones ni costos ocultos.
                     </p>
                     <div class="p-6 bg-white/5 rounded-3xl border border-white/5 mb-8">
-                        <div class="text-sm font-bold text-electricBlue mb-2">Seguridad Bancaria</div>
+                        <!-- Ajuste 6: No mención a actividades bancarias -->
+                        <div class="text-sm font-bold text-electricBlue mb-2">Confidencialidad Local</div>
                         <p class="text-xs text-slate-500 leading-relaxed">Tus datos financieros residen exclusivamente en tu dispositivo, garantizando confidencialidad absoluta.</p>
                     </div>
                     <button class="w-full py-4 rounded-2xl bg-electricBlue/10 border border-electricBlue/20 text-electricBlue font-bold hover:bg-electricBlue hover:text-dark transition-all">Ver Soluciones</button>
@@ -219,12 +268,13 @@
                 <!-- Julian Ricardi -->
                 <div class="text-center group">
                     <div class="relative inline-block mb-10">
+                        <!-- Ajuste 8: Foto de la reunión y link a LinkedIn -->
                         <div class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 rotate-3 group-hover:rotate-0">
-                            <img src="./assets/images/team_julian.jpg" alt="Julian Ricardi" class="w-full h-full object-cover">
+                            <img src="https://jmricardi.github.io/innovaservices-web/assets/images/team_01.jpg" alt="Julian Ricardi" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl">
+                        <a href="https://www.linkedin.com/in/julian-m-ricardi-35706a40/" target="_blank" class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl hover:scale-110 transition-transform">
                             <svg class="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </div>
+                        </a>
                     </div>
                     <h3 class="text-2xl font-black mb-3 italic">Julian M. Ricardi</h3>
                     <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">CEO & Economist</p>
@@ -316,9 +366,7 @@
                     <a href="privacy-es.html" class="hover:text-electricBlue transition-colors">Privacy Policy</a> | 
                     <a href="terms-es.html" class="hover:text-electricBlue transition-colors">Terms of Service</a>
                 </div>
-                <div class="text-slate-700 text-xs font-bold uppercase tracking-[0.2em]">
-                    Built with Precision
-                </div>
+                <!-- Ajuste 9: Eliminar Built with Precision -->
             </div>
         </div>
     </footer>
