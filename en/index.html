@@ -105,12 +105,6 @@
             animation-duration: 30s;
             animation-delay: -10s;
         }
-        .blob-3 {
-            bottom: 10%;
-            left: -5%;
-            animation-duration: 30s;
-            animation-delay: -10s;
-        }
 
         /* Splash Screen Styles */
         #splash-screen {
@@ -121,16 +115,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 0.8s ease, visibility 0.8s;
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
+        }
+        .splash-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: splash-reveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
         .splash-logo {
-            width: 120px;
-            height: 120px;
-            animation: splash-pulse 2s ease-in-out infinite;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.3));
         }
-        @keyframes splash-pulse {
-            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.2)); opacity: 0.8; }
-            50% { transform: scale(1.1); filter: drop-shadow(0 0 40px rgba(34, 211, 238, 0.6)); opacity: 1; }
+        @keyframes splash-reveal {
+            0% { transform: scale(1.1); opacity: 0; filter: blur(10px); }
+            100% { transform: scale(1); opacity: 1; filter: blur(0); }
+        }
+        .loading-bar-container {
+            width: 200px;
+            height: 2px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .loading-bar {
+            height: 100%;
+            background: #22d3ee;
+            box-shadow: 0 0 15px #22d3ee;
+            animation: loading-progress 2.5s ease-in-out forwards;
+        }
+        @keyframes loading-progress {
+            0% { width: 0%; transform: translateX(-100%); }
+            20% { width: 30%; transform: translateX(0); }
+            100% { width: 100%; transform: translateX(0); }
         }
         .hide-splash {
             opacity: 0;
@@ -149,19 +169,14 @@
     
     <!-- Splash Screen -->
     <div id="splash-screen">
-        <div class="flex flex-col items-center gap-8">
-            <img src="../assets/images/logo.png" alt="Arandu Labs" class="splash-logo">
-            <div class="h-1 w-48 bg-white/5 rounded-full overflow-hidden">
-                <div class="h-full bg-electricBlue animate-[loading_2s_ease-in-out_infinite]"></div>
+        <div class="splash-content">
+            <img src="../assets/images/logo.png" alt="Arandu Labs" class="splash-logo mb-6">
+            <div class="text-white text-2xl font-black tracking-[0.3em] uppercase mb-8 italic opacity-80">Arandu Labs</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
             </div>
         </div>
     </div>
-    <style>
-        @keyframes loading {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-    </style>
 
     <script>
         window.addEventListener('load', () => {
@@ -169,7 +184,7 @@
                 const splash = document.getElementById('splash-screen');
                 splash.classList.add('hide-splash');
                 document.body.classList.remove('loading');
-            }, 2000); // Mínimo 2 segundos de animación
+            }, 2800); 
         });
     </script>
 
@@ -315,7 +330,7 @@
                     <div class="p-6 bg-white/5 rounded-3xl border border-white/5 mb-8">
                         <!-- Ajuste 6: Credible privacy communication -->
                         <div class="text-sm font-bold text-electricBlue mb-2">Local-First Processing</div>
-                        <p class="text-xs text-slate-500 leading-relaxed">We prioritize on-device storage to minimize data exposure, strengthening your financial privacy.</p>
+                        <p class="text-xs text-slate-500 leading-relaxed">We prioritize on-device storage to minimize data exposure, strengthening your privacy.</p>
                     </div>
                     <button class="w-full py-4 rounded-2xl bg-electricBlue/10 border border-electricBlue/20 text-electricBlue font-bold hover:bg-electricBlue hover:text-dark transition-all">View Solutions</button>
                 </div>
