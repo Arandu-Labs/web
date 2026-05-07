@@ -25,10 +25,10 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/logo.png">
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter & Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -124,13 +124,14 @@
             animation: splash-reveal 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
         }
         .splash-logo {
-            width: 100px;
-            height: 100px;
+            width: 500px;
+            max-width: 90vw;
+            height: auto;
             object-fit: contain;
-            filter: drop-shadow(0 0 30px rgba(34, 211, 238, 0.3));
+            filter: drop-shadow(0 0 50px rgba(34, 211, 238, 0.5));
         }
         @keyframes splash-reveal {
-            0% { transform: scale(1.1); opacity: 0; filter: blur(10px); }
+            0% { transform: scale(0.8); opacity: 0; filter: blur(20px); }
             100% { transform: scale(1); opacity: 1; filter: blur(0); }
         }
         .loading-bar-container {
@@ -170,8 +171,8 @@
     <!-- Splash Screen -->
     <div id="splash-screen">
         <div class="splash-content">
-            <img src="../assets/images/logo.png" alt="Arandu Labs" class="splash-logo mb-6">
-            <div class="text-white text-2xl font-black tracking-[0.3em] uppercase mb-8 italic opacity-80">Arandu Labs</div>
+            <img src="../assets/images/logo.png" alt="Arandu Labs" class="splash-logo mb-12">
+            <div class="text-white text-4xl md:text-6xl font-black tracking-[0.5em] uppercase mb-12 italic opacity-90 text-center" style="font-family: 'Poppins', sans-serif;">Arandu Labs</div>
             <div class="loading-bar-container">
                 <div class="loading-bar"></div>
             </div>
@@ -189,7 +190,7 @@
     </script>
 
     <!-- Header / Nav -->
-    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 glass">
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-black/20 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <!-- Ajuste 2: Logo Prominence -->
@@ -198,7 +199,7 @@
                     <img src="../assets/images/logo-nav.png" alt="Arandu Labs Logo" class="relative w-14 h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
+                    <span class="text-2xl font-black tracking-tighter leading-none" style="font-family: 'Poppins', sans-serif;">Arandu Labs</span>
                     <span class="text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
                 </div>
             </div>
@@ -217,36 +218,45 @@
                     </span>
                 </div>
             </div>
-            <a href="#contact" class="px-6 py-2.5 bg-electricBlue/10 text-electricBlue border border-electricBlue/30 rounded-full text-sm font-bold hover:bg-electricBlue hover:text-dark transition-all duration-300 shadow-lg shadow-electricBlue/5">
+            <a href="#contact" class="px-6 py-2.5 bg-electricBlue text-dark rounded-full text-sm font-bold hover:bg-white transition-all duration-300 shadow-xl shadow-electricBlue/20">
                 Start Project
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-48 pb-32 px-6 hero-bg overflow-hidden">
-        <!-- Ajuste 10: Dynamic Elements -->
-        <div class="blob"></div>
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Elements -->
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
-
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tighter">
-                Arandu Labs LLC: <br>
-                <span class="text-gradient">High Utility Digital Solutions</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
-                <!-- Ajuste 3: Stylized Copy -->
-                We develop lightweight and precise applications designed to solve everyday problems, focused on efficiency and privacy.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <!-- Ajuste 4: Button color sync -->
-                <a href="#solutions" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
-                    Our Apps
-                </a>
-                <a href="#philosophy" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
-                    Learn More
-                </a>
+        
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electricBlue/10 border border-electricBlue/20 text-electricBlue text-[10px] font-black uppercase tracking-widest mb-8 animate-fade-in">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-electricBlue opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-electricBlue"></span>
+                    </span>
+                    Arandu Labs LLC
+                </div>
+                
+                <h1 class="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-8" style="font-family: 'Poppins', sans-serif;">
+                    BOUTIQUE <br> 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-brandBlue">ENGINEERING.</span>
+                </h1>
+                
+                <p class="text-xl text-slate-400 font-light leading-relaxed mb-12 max-w-xl">
+                    We develop lightweight and precise applications designed to solve everyday problems, focused on efficiency and total privacy.
+                </p>
+                
+                <div class="flex flex-wrap gap-6">
+                    <a href="#solutions" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-electricBlue/30 uppercase tracking-wider text-sm">
+                        Our Apps
+                    </a>
+                    <a href="#philosophy" class="px-10 py-5 bg-white/5 border border-white/10 text-white font-black rounded-2xl hover:bg-white/10 transition-all uppercase tracking-wider text-sm">
+                        Learn More
+                    </a>
+                </div>
             </div>
         </div>
     </section>
