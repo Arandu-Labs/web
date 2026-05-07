@@ -367,16 +367,24 @@
                 <div class="glass p-12 rounded-[2.5rem] border border-white/10 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-electricBlue/10 blur-3xl -mr-16 -mt-16"></div>
                     <h4 class="text-2xl font-black mb-8 italic">Have a project?</h4>
-                    <form class="space-y-6">
+                    <div id="contact-success" class="hidden flex flex-col items-center text-center py-12">
+                        <div class="w-20 h-20 bg-electricBlue/10 rounded-full flex items-center justify-center text-electricBlue mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4 italic">Message Sent!</h4>
+                        <p class="text-slate-400 font-light">We'll get back to you shortly at the email provided.</p>
+                        <button onclick="resetForm()" class="mt-8 text-electricBlue text-sm font-bold hover:underline">Send another message</button>
+                    </div>
+                    <form id="contact-form" class="space-y-6">
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                            <input type="email" placeholder="name@company.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
+                            <input type="email" required placeholder="name@company.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
                         </div>
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Message</label>
-                            <textarea rows="3" placeholder="Tell us briefly about your idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
+                            <textarea rows="3" required placeholder="Tell us briefly about your idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
                         </div>
-                        <button class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20">Send Proposal</button>
+                        <button type="submit" class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20">Send Proposal</button>
                     </form>
                 </div>
             </div>
@@ -394,5 +402,21 @@
         </div>
     </footer>
 
+    <script>
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('contact-success');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+        });
+
+        function resetForm() {
+            form.reset();
+            form.classList.remove('hidden');
+            success.classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
