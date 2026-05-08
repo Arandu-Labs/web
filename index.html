@@ -119,22 +119,30 @@
     <!-- Header / Nav -->
     <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 glass">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <!-- Logo Section -->
             <div class="flex items-center gap-4">
                 <div class="relative group">
                     <div class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <img src="./assets/images/logo-nav.png" alt="Arandu Labs Logo" class="relative w-14 h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                    <img src="./assets/images/logo-nav.png" alt="Arandu Labs Logo" class="relative w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
-                    <span class="text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
+                    <span class="text-xl md:text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
+                    <span class="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
                 </div>
             </div>
-            <div class="hidden md:flex gap-10 text-sm font-medium text-slate-400">
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex gap-10 text-sm font-medium text-slate-400">
                 <a href="#philosophy" class="hover:text-electricBlue transition-all">Philosophy</a>
                 <a href="#solutions" class="hover:text-electricBlue transition-all">Solutions</a>
                 <a href="#team" class="hover:text-electricBlue transition-all">Team</a>
                 <a href="#contact" class="hover:text-electricBlue transition-all">Contact</a>
-                <div class="border-l border-white/10 ml-2 pl-4 flex gap-4 text-xs font-bold items-center">
+            </div>
+
+            <!-- Language & Action Section -->
+            <div class="flex items-center gap-4 md:gap-8">
+                <!-- Language Flags (Visible on md and up, inside mobile menu on small screens) -->
+                <div class="hidden md:flex gap-4 text-xs font-bold items-center border-l border-white/10 pl-4">
                     <a href="es/index.html" class="flex items-center gap-1.5 hover:text-electricBlue transition-all opacity-60 hover:opacity-100">
                         <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="20" alt="Spain" class="rounded-sm"> ES
                     </a>
@@ -142,8 +150,45 @@
                         <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="20" alt="USA" class="rounded-sm"> EN
                     </span>
                 </div>
+
+                <a href="#contact" class="hidden sm:block px-6 py-2.5 bg-electricBlue/10 text-electricBlue border border-electricBlue/30 rounded-full text-sm font-bold hover:bg-electricBlue hover:text-dark transition-all duration-300">
+                    Start Project
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-slate-400 hover:text-electricBlue transition-colors">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
             </div>
-            <a href="#contact" class="px-6 py-2.5 bg-electricBlue/10 text-electricBlue border border-electricBlue/30 rounded-full text-sm font-bold hover:bg-electricBlue hover:text-dark transition-all duration-300 shadow-lg shadow-electricBlue/5">
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-dark/95 backdrop-blur-xl z-[60] lg:hidden flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-300">
+            <button id="mobile-menu-close" class="absolute top-8 right-8 text-slate-400 hover:text-electricBlue transition-colors">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            
+            <a href="#philosophy" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Philosophy</a>
+            <a href="#solutions" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Solutions</a>
+            <a href="#team" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Team</a>
+            <a href="#contact" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Contact</a>
+            
+            <div class="w-20 h-1 bg-white/10 rounded-full my-4"></div>
+            
+            <div class="flex gap-8 text-sm font-bold items-center">
+                <a href="es/index.html" class="flex items-center gap-3 hover:text-electricBlue transition-all opacity-60 hover:opacity-100">
+                    <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="30" alt="Spain" class="rounded-sm shadow-lg"> ES
+                </a>
+                <span class="flex items-center gap-3 text-white bg-white/5 px-4 py-2 rounded-xl border border-white/10">
+                    <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="30" alt="USA" class="rounded-sm shadow-lg"> EN
+                </span>
+            </div>
+
+            <a href="#contact" class="mt-8 px-10 py-4 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/20 active:scale-95 transition-all">
                 Start Project
             </a>
         </div>
@@ -413,10 +458,25 @@
             formElement: '#contact-form', 
             formId: 'mzdovkyr',
             onSuccess: function() {
-                // Opcional: acciones adicionales tras el éxito
                 console.log('Form submitted successfully');
             }
         });
+
+        // Mobile Menu Logic
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('pointer-events-none');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        toggleBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        links.forEach(link => link.addEventListener('click', toggleMenu));
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
