@@ -140,14 +140,14 @@
             </div>
 
             <!-- Language & Action Section -->
-            <div class="flex items-center gap-4 md:gap-8">
-                <!-- Language Flags (Visible on md and up, inside mobile menu on small screens) -->
-                <div class="hidden md:flex gap-4 text-xs font-bold items-center border-l border-white/10 pl-4">
-                    <a href="es/index.html" class="flex items-center gap-1.5 hover:text-electricBlue transition-all opacity-60 hover:opacity-100">
-                        <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="20" alt="Spain" class="rounded-sm"> ES
+            <div class="flex items-center gap-3 md:gap-8">
+                <!-- Language Flags (Always visible, compact on mobile) -->
+                <div class="flex gap-3 text-xs font-bold items-center border-l border-white/10 pl-4 h-8">
+                    <a href="es/index.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="22" alt="Spain" class="rounded-sm shadow-sm">
                     </a>
-                    <span class="flex items-center gap-1.5 text-white bg-white/5 px-2 py-1 rounded-md">
-                        <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="20" alt="USA" class="rounded-sm"> EN
+                    <span class="flex items-center text-white bg-white/5 px-1.5 py-0.5 rounded-md border border-white/10">
+                        <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="22" alt="USA" class="rounded-sm shadow-sm">
                     </span>
                 </div>
 
@@ -156,42 +156,58 @@
                 </a>
 
                 <!-- Mobile Menu Toggle -->
-                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-slate-400 hover:text-electricBlue transition-colors">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-slate-400 hover:text-electricBlue transition-colors group">
+                    <div class="space-y-1.5">
+                        <span class="block w-6 h-0.5 bg-current rounded-full transition-all group-hover:w-8"></span>
+                        <span class="block w-8 h-0.5 bg-current rounded-full"></span>
+                        <span class="block w-5 h-0.5 bg-current rounded-full transition-all group-hover:w-8 ml-auto"></span>
+                    </div>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-dark/95 backdrop-blur-xl z-[60] lg:hidden flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-300">
-            <button id="mobile-menu-close" class="absolute top-8 right-8 text-slate-400 hover:text-electricBlue transition-colors">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-            
-            <a href="#philosophy" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Philosophy</a>
-            <a href="#solutions" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Solutions</a>
-            <a href="#team" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Team</a>
-            <a href="#contact" class="mobile-link text-3xl font-black hover:text-electricBlue transition-colors">Contact</a>
-            
-            <div class="w-20 h-1 bg-white/10 rounded-full my-4"></div>
-            
-            <div class="flex gap-8 text-sm font-bold items-center">
-                <a href="es/index.html" class="flex items-center gap-3 hover:text-electricBlue transition-all opacity-60 hover:opacity-100">
-                    <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="30" alt="Spain" class="rounded-sm shadow-lg"> ES
-                </a>
-                <span class="flex items-center gap-3 text-white bg-white/5 px-4 py-2 rounded-xl border border-white/10">
-                    <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="30" alt="USA" class="rounded-sm shadow-lg"> EN
-                </span>
+        <!-- Mobile Menu Drawer (Premium Redesign) -->
+        <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full sm:w-80 bg-dark/95 backdrop-blur-2xl z-[60] lg:hidden flex flex-col p-10 transform translate-x-full transition-transform duration-500 ease-out border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.5)]">
+            <div class="flex items-center justify-between mb-16">
+                <div class="w-10 h-10 bg-gradient-to-br from-electricBlue to-accentBlue rounded-xl flex items-center justify-center font-black text-dark text-xl">A</div>
+                <button id="mobile-menu-close" class="text-slate-400 hover:text-electricBlue transition-colors p-2">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
-
-            <a href="#contact" class="mt-8 px-10 py-4 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/20 active:scale-95 transition-all">
-                Start Project
-            </a>
+            
+            <div class="flex flex-col gap-8">
+                <a href="#philosophy" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Philosophy
+                </a>
+                <a href="#solutions" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Solutions
+                </a>
+                <a href="#team" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Team
+                </a>
+                <a href="#contact" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Contact
+                </a>
+            </div>
+            
+            <div class="mt-auto pt-10 border-t border-white/5">
+                <a href="#contact" class="w-full py-4 bg-electricBlue text-dark font-black rounded-2xl flex items-center justify-center gap-3 shadow-xl shadow-electricBlue/20 active:scale-95 transition-all">
+                    Start Project
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+                <div class="mt-8 text-center text-slate-500 text-xs font-medium tracking-widest uppercase">
+                    Arandu Labs LLC
+                </div>
+            </div>
         </div>
+        <!-- Overlay backdrop -->
+        <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden"></div>
     </nav>
 
     <!-- Hero Section -->
@@ -465,18 +481,26 @@
         // Mobile Menu Logic
         const toggleBtn = document.getElementById('mobile-menu-toggle');
         const closeBtn = document.getElementById('mobile-menu-close');
+        const backdrop = document.getElementById('mobile-menu-backdrop');
         const menu = document.getElementById('mobile-menu');
         const links = document.querySelectorAll('.mobile-link');
 
-        function toggleMenu() {
-            menu.classList.toggle('opacity-0');
-            menu.classList.toggle('pointer-events-none');
-            document.body.classList.toggle('overflow-hidden');
+        function openMenu() {
+            menu.classList.remove('translate-x-full');
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.classList.add('overflow-hidden');
         }
 
-        toggleBtn.addEventListener('click', toggleMenu);
-        closeBtn.addEventListener('click', toggleMenu);
-        links.forEach(link => link.addEventListener('click', toggleMenu));
+        function closeMenu() {
+            menu.classList.add('translate-x-full');
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        toggleBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        backdrop.addEventListener('click', closeMenu);
+        links.forEach(link => link.addEventListener('click', closeMenu));
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
