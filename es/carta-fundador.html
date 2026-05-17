@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta del Fundador | Arandu Labs LLC</title>
+    <meta name="description" content="Conoce la inspiración y visión detrás de Arandu Labs LLC a través de las palabras de nuestro fundador.">
+    <meta name="author" content="Arandu Labs LLC">
+    <link rel="canonical" href="https://arandulabs.dev/es/carta-fundador.html">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Carta del Fundador | Arandu Labs LLC">
+    <meta property="og:description" content="Inspiración y visión de Arandu Labs LLC.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://arandulabs.dev/assets/images/founder_nature.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0a0a0b',
+                        deepBlue: '#0f172a',
+                        electricBlue: '#22d3ee',
+                        accentBlue: '#3b82f6',
+                        brandBlue: '#3b82f6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0b;
+            color: #f8fafc;
+        }
+        .glass {
+            background: rgba(10, 10, 11, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #22d3ee, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: float 20s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(100px, 50px) scale(1.1); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Blobs de Fondo Decorativos -->
+    <div class="blob top-[-10%] left-[-10%]"></div>
+    <div class="blob bottom-[10%] right-[-10%] opacity-50" style="animation-duration: 25s; animation-delay: -5s;"></div>
+
+    <!-- Header / Nav -->
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/10 bg-dark lg:bg-dark/95 lg:backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative">
+                        <div class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <img src="../assets/images/logo.png" alt="Arandu Labs Logo" class="relative w-12 h-12 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl md:text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
+                        <span class="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex gap-10 text-sm font-bold text-white">
+                <a href="index.html#filosofia" class="hover:text-electricBlue transition-all">Filosofía</a>
+                <a href="index.html#soluciones" class="hover:text-electricBlue transition-all">Soluciones</a>
+                <a href="index.html#equipo" class="hover:text-electricBlue transition-all">Equipo</a>
+                <a href="#contacto" class="hover:text-electricBlue transition-all">Contacto</a>
+            </div>
+
+            <div class="flex items-center gap-8">
+                <div class="flex gap-3 text-xs font-bold items-center border-l border-white/10 pl-4 h-8">
+                    <span class="flex items-center text-white bg-white/5 px-1.5 py-0.5 rounded-md border border-white/10">
+                        <img src="https://flagcdn.com/w20/es.png" width="22" alt="España" class="rounded-sm shadow-sm">
+                    </span>
+                    <a href="../en/founder-letter.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/us.png" width="22" alt="USA" class="rounded-sm shadow-sm">
+                    </a>
+                    <a href="../pt/carta-fundador.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/br.png" width="22" alt="Brasil" class="rounded-sm shadow-sm">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Carta -->
+    <main class="pt-44 pb-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+                <!-- Imagen del Fundador (Aún más pequeña + Mini Bio Real) -->
+                <div class="lg:col-span-3 relative group order-2 lg:order-1">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-electricBlue/20 to-accentBlue/20 blur-3xl rounded-[3rem] opacity-50 group-hover:opacity-80 transition-opacity"></div>
+                    <div class="relative rounded-[2rem] overflow-hidden border border-white/10 glass max-w-[240px] mx-auto lg:mx-0">
+                        <img src="../assets/images/founder_nature.jpg" alt="Julian Maria Ricardi - Fundador de Arandu Labs" class="w-full aspect-[4/5] object-cover object-[30%_bottom]">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-dark via-dark/50 to-transparent text-center">
+                            <h3 class="text-xl font-black italic">Julian M.</h3>
+                            <p class="text-electricBlue font-bold tracking-widest text-[10px] uppercase">Fundador & CEO</p>
+                        </div>
+                    </div>
+                    <!-- Mini Bio debajo de la foto -->
+                    <div class="mt-8 space-y-4 px-2 max-w-[240px] mx-auto lg:mx-0">
+                        <p class="text-xs text-slate-400 leading-relaxed italic text-center lg:text-left">
+                            Padre de familia, humanista, economista y consultor apasionado por la tecnología. Lidera Arandu Labs con la firme convicción de democratizar el acceso a las soluciones digitales útiles y honestas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contenido de la Carta (Máxima relevancia) -->
+                <div class="lg:col-span-9 space-y-10 order-1 lg:order-2">
+                    <div class="space-y-4">
+                        <span class="text-electricBlue font-black tracking-[0.3em] text-xs uppercase block">Visión y Propósito</span>
+                        <h1 class="text-4xl md:text-6xl font-black tracking-tighter leading-[0.9] text-white">
+                            El Propósito detrás de <span class="text-gradient italic">Arandu Labs</span>
+                        </h1>
+                    </div>
+
+                    <div class="space-y-8 text-lg md:text-xl text-slate-300 font-light leading-relaxed text-justify">
+                        <p class="first-letter:text-6xl first-letter:font-black first-letter:text-electricBlue first-letter:mr-4 first-letter:float-left">
+                            Hay momentos en la vida en los que uno se detiene a observar el mundo que lo rodea y siente la profunda necesidad de tender un puente. Arandu Labs no nació de la fría ambición corporativa ni del deseo de conquistar mercados financieros; nació en el corazón de lo cotidiano, de la observación atenta de nuestras propias dificultades y de las de nuestros vecinos, amigos y familias.
+                        </p>
+                        
+                        <p>
+                            Nació de la convicción de que la tecnología, si no es accesible, deja de ser una herramienta de progreso para convertirse en una nueva barrera de exclusión. Mi propósito al materializar este emprendimiento es simple pero profundamente transformador: <strong class="text-white font-semibold">poner al alcance de todos herramientas sencillas que resuelvan problemas reales, devolviéndole a la tecnología su sentido más humano y altruista.</strong>
+                        </p>
+
+                        <div class="section-divider my-8"></div>
+
+                        <h3 class="text-2xl font-black text-white tracking-tight flex items-center gap-3">
+                            <span class="w-1.5 h-6 bg-electricBlue rounded-full"></span>
+                            La paradoja de la potencia olvidada
+                        </h3>
+
+                        <p>
+                            A menudo nos deslumbran con el último grito de la moda tecnológica, con inteligencias artificiales en la nube y dispositivos prohibitivos. Sin embargo, nos olvidamos de un milagro cotidiano que llevamos en el bolsillo. <strong class="text-electricBlue font-bold">La potencia de procesamiento y la capacidad para resolver problemas que hoy residen en un teléfono celular de gama media —e incluso de gama baja— supera con creces la potencia disponible hace apenas unas décadas en las instalaciones científicas más avanzadas del planeta.</strong>
+                        </p>
+
+                        <p>
+                            Es una verdad asombrosa: cada uno de nosotros camina con una supercomputadora en la mano. Por eso, la meta fundamental de nuestras aplicaciones no es obligar al usuario a mirar hacia afuera o a consumir más, sino <strong class="text-white font-semibold">hacer un uso máximo y eficiente de las herramientas que ya están instaladas en sus propios dispositivos</strong>. Nos propusimos el desafío de exprimir esa capacidad latente, de despertar el potencial dormido del móvil de cada persona para ponerlo a trabajar en su beneficio directo.
+                        </p>
+
+                        <div class="section-divider my-8"></div>
+
+                        <h3 class="text-2xl font-black text-white tracking-tight flex items-center gap-3">
+                            <span class="w-1.5 h-6 bg-electricBlue rounded-full"></span>
+                            Inclusión digital masiva desde la empatía
+                        </h3>
+
+                        <p>
+                            La verdadera inclusión digital no consiste en digitalizar a las personas para que consuman servicios caros; consiste en <strong class="text-white font-semibold">democratizar las soluciones</strong>. Nuestra filosofía de desarrollo se basa en la articulación intuitiva de herramientas que, en muchos casos, son nativas de los equipos o tienen un coste cero para el usuario. Diseñamos pensando en la simplicidad, en que el logro de objetivos concretos no requiera un manual de instrucciones ni una billetera abultada, sino apenas unos toques en la pantalla.
+                        </p>
+
+                        <p>
+                            Para lograr esto, hemos tenido que tomar decisiones firmes y, a veces, contracorriente:
+                        </p>
+
+                        <ul class="space-y-4 pl-4 border-l border-electricBlue/30 text-base md:text-lg text-slate-400">
+                            <li>
+                                <strong class="text-white">Renuncia a la vanguardia innecesaria:</strong> Decidimos, conscientemente, sacrificar el acceso a las herramientas de punta de la industria cuando sus altos costos no lo justifican.
+                            </li>
+                            <li>
+                                <strong class="text-white">Filosofía de máximo costo-beneficio:</strong> Entendemos que el verdadero ingenio no está en resolver un problema gastando millones, sino en resolverlo de forma brillante con los recursos que ya tenemos a mano. Si una tecnología sofisticada encarece el producto sin cambiar la vida del usuario, preferimos la nobleza de lo simple y lo eficiente.
+                            </li>
+                        </ul>
+
+                        <div class="py-8 my-8 border-y border-white/10">
+                            <blockquote class="text-xl md:text-3xl font-black italic text-white leading-tight text-center">
+                                "El verdadero ingenio no está en resolver un problema gastando millones, sino en resolverlo de forma brillante con los recursos que ya tenemos a mano."
+                            </blockquote>
+                        </div>
+
+                        <h3 class="text-2xl font-black text-white tracking-tight flex items-center gap-3">
+                            <span class="w-1.5 h-6 bg-electricBlue rounded-full"></span>
+                            Un pacto de honestidad y sostenibilidad
+                        </h3>
+
+                        <p>
+                            Mantener los costes de desarrollo y mantenimiento al mínimo absoluto no es solo una estrategia de supervivencia; es un compromiso ético para con ustedes. Queremos generar el mayor valor posible manteniendo el menor impacto económico viable.
+                        </p>
+
+                        <p>
+                            Para sostener este ecosistema sin cobrar suscripciones que marginen a quienes más necesitan estas herramientas, hemos adoptado un modelo basado en publicidad bajo una promesa inquebrantable: <strong class="text-electricBlue font-bold">asumimos el compromiso de mostrar únicamente la publicidad estrictamente necesaria para cubrir los costes operativos.</strong>
+                        </p>
+
+                        <p>
+                            No buscamos la saturación ni el beneficio desmedido. De hecho, nuestro modelo está pensado para que, <strong class="text-white font-semibold">en la medida en que aumente la escala de adopción de cada aplicación y seamos más en esta comunidad, la intensidad de los anuncios disminuya</strong>. Queremos que el crecimiento de Arandu Labs se traduzca directamente en una mejor experiencia y en un mayor bienestar para el usuario, no en un aumento de nuestras ganancias a costa de su tranquilidad.
+                        </p>
+
+                        <p>
+                            Arandu Labs es, en última instancia, un proyecto de agradecimiento y de servicio. Es la materialización de la idea de que la ingeniería y la economía deben estar al servicio de la felicidad cotidiana. Les agradezco profundamente por abrirnos las puertas de sus dispositivos y de sus hogares. Nos comprometemos a seguir creando, cuidando siempre de su confianza, de su tiempo y de su bienestar.
+                        </p>
+                    </div>
+
+                    <div class="pt-12 flex items-center gap-8 border-t border-white/5">
+                        <div class="flex flex-col">
+                            <span class="text-white font-black italic text-2xl">Julian Maria Ricardi</span>
+                            <span class="text-slate-500 text-sm font-medium tracking-wide uppercase">Fundador de Arandu Labs</span>
+                            <span class="text-slate-600 text-xs mt-1 font-medium">Mayo de 2026</span>
+                        </div>
+                        <div class="flex-grow h-[1px] bg-gradient-to-r from-white/10 to-transparent"></div>
+                        <div class="flex gap-4">
+                            <img src="../assets/images/logo.png" class="w-10 h-10 opacity-30 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer" alt="Arandu Labs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="pt-32 pb-16 px-6 border-t border-white/5 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 mb-24">
+                <div>
+                    <div class="flex items-center gap-3 mb-10">
+                        <img src="../assets/images/logo.png" alt="Arandu Labs Logo" class="w-12 h-12 object-contain">
+                        <span class="text-3xl font-black tracking-tighter">Arandu Labs LLC</span>
+                    </div>
+                    <p class="text-slate-500 max-w-sm leading-relaxed mb-10 font-light text-lg">
+                        Elevando la utilidad digital a través de software liviano, honesto y accesible para todos. Tecnología que respeta tu tiempo y tu privacidad.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 text-slate-400 group">
+                            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-electricBlue group-hover:bg-electricBlue group-hover:text-dark transition-all">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <a href="mailto:soporte@arandulabs.dev" class="text-lg font-medium hover:text-electricBlue transition-colors">soporte@arandulabs.dev</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-12 rounded-[2.5rem] border border-white/10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-electricBlue/10 blur-3xl -mr-16 -mt-16"></div>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
+                            <input type="email" name="email" required placeholder="nombre@empresa.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Mensaje</label>
+                            <textarea rows="6" name="message" required placeholder="Cuéntanos brevemente tu idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="section-divider mb-12"></div>
+
+            <div class="flex flex-col items-center gap-8 text-center">
+                <div class="text-slate-600 text-sm font-medium tracking-wide">
+                    &copy; 2026 Arandu Labs LLC | 
+                    <a href="privacy.html" class="hover:text-electricBlue transition-colors">Política de Privacidad</a> | 
+                    <a href="terms.html" class="hover:text-electricBlue transition-colors">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

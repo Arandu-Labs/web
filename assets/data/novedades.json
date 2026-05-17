@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "¡Bienvenido a Arandu Labs!",
+    "mensaje": "Estamos emocionados de presentarte nuestro nuevo portal de innovación. Descubre nuestras soluciones digitales de alta utilidad.",
+    "fecha_inicio": "2026-05-01",
+    "fecha_fin": "2026-12-31",
+    "app": true,
+    "imagen_url": "assets/images/logo.png",
+    "detalle_url": "es/index.html#soluciones"
+  },
+  {
+    "id": 2,
+    "titulo": "Nueva Actualización en FirmApp",
+    "mensaje": "Hemos optimizado el motor de renderizado para documentos de gran tamaño. ¡Actualiza ahora para una mejor experiencia!",
+    "fecha_inicio": "2026-05-10",
+    "fecha_fin": "2026-06-10",
+    "app": true,
+    "imagen_url": "assets/images/logo.png",
+    "detalle_url": "es/carta-fundador.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Mantenimiento Programado",
+    "mensaje": "Nuestros servidores web estarán en mantenimiento el domingo 20 de mayo a las 02:00 AM UTC.",
+    "fecha_inicio": "2026-05-18",
+    "fecha_fin": "2026-05-20",
+    "app": false,
+    "imagen_url": "assets/images/logo.png",
+    "detalle_url": ""
+  }
+]
