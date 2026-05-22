@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Terms of Service | Arandu Labs</title>
+    <script>
+        // 1. Detecta el idioma del navegador del usuario o del bot
+        var userLang = navigator.language || navigator.userLanguage; 
+        userLang = userLang.substr(0, 2).toLowerCase();
+
+        // 2. Redirige a la subcarpeta correspondiente sin romper la arquitectura
+        if (userLang === 'es') {
+            window.location.href = './es/terms.html'; // Redirección a tus términos en español
+        } else if (userLang === 'pt') {
+            window.location.href = './pt/terms.html'; // Por si sumas portugués en el futuro
+        } else {
+            window.location.href = './en/terms.html'; // Inglés como respaldo global para los bots de certificación
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to Terms of Service... If you are not redirected, please select your language:</p>
+    <ul>
+        <li><a href="./es/terms.html">Español</a></li>
+        <li><a href="./en/terms.html">English</a></li>
+        <li><a href="./pt/terms.html">Português</a></li>
+    </ul>
+</body>
+</html>

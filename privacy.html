@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy | Arandu Labs</title>
+    <script>
+        // 1. Detecta el idioma del navegador
+        var userLang = navigator.language || navigator.userLanguage; 
+        userLang = userLang.substr(0, 2).toLowerCase();
+
+        // 2. Redirige a la subcarpeta correspondiente sin romper las rutas relativas
+        if (userLang === 'es') {
+            window.location.href = './es/privacy.html'; // O la ruta exacta a tu carpeta en español
+        } else if (userLang === 'pt') {
+            window.location.href = './pt/privacy.html'; // O la ruta exacta a tu carpeta en portugués
+        } else {
+            window.location.href = './en/privacy.html'; // Inglés como fallback global para el bot
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to Privacy Policy... If you are not redirected, please select your language:</p>
+    <ul>
+        <li><a href="./es/privacy.html">Español</a></li>
+        <li><a href="./en/privacy.html">English</a></li>
+        <li><a href="./pt/privacy.html">Português</a></li>
+    </ul>
+</body>
+</html>
