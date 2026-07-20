@@ -135,8 +135,8 @@
 
             <!-- Desktop Links -->
             <div class="hidden lg:flex gap-10 text-sm font-bold text-white">
-                <a href="#philosophy" class="hover:text-electricBlue transition-all">Engineering Pillars</a>
                 <a href="#solutions" class="hover:text-electricBlue transition-all">Services & Expertise</a>
+                <a href="#portfolio" class="hover:text-electricBlue transition-all">Applications Portfolio</a>
                 <a href="en/founder-letter.html" class="text-electricBlue/80 hover:text-electricBlue transition-all">Founder's Letter</a>
                 <a href="#team" class="hover:text-electricBlue transition-all">Team</a>
                 <a href="#contact" class="hover:text-electricBlue transition-all">Contact</a>
@@ -180,13 +180,13 @@
             </div>
             
             <div class="flex flex-col gap-8 text-white">
-                <a href="#philosophy" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
-                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                    Engineering Pillars
-                </a>
                 <a href="#solutions" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
                     <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     Services & Expertise
+                </a>
+                <a href="#portfolio" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Applications Portfolio
                 </a>
                 <a href="#team" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
                     <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -225,17 +225,9 @@
                 Arandu Labs: <br>
                 <span class="text-gradient">Enterprise Software Engineering & B2B Consulting</span>
             </h1>
-            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-light">
+            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-0 font-light">
                 We architect high-performance custom development services and technical infrastructure solutions that drive efficiency, scalability, and security for modern businesses.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-6">
-                <a href="#solutions" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
-                    Our Expertise
-                </a>
-                <a href="#philosophy" class="px-10 py-5 bg-electricBlue text-dark font-black rounded-2xl shadow-xl shadow-electricBlue/40 hover:scale-105 active:scale-95 transition-all">
-                    Get in Touch
-                </a>
-            </div>
         </div>
     </section>
 
@@ -296,54 +288,49 @@
                 <div class="w-24 h-1.5 bg-electricBlue rounded-full mx-auto"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10">
-                <!-- Custom Software Development -->
-                <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col h-full group">
-                    <div class="w-14 h-14 mb-8 rounded-2xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-7 h-7 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Software Engineering -->
+                <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
+                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-black mb-6">Custom Software Development</h3>
-                    <p class="text-slate-400 mb-10 flex-grow leading-relaxed font-light">
-                        Engineering bespoke productivity tools, automated workflows, and high-performance utility solutions for corporate operations.
+                    <h3 class="text-xl font-black mb-4">Software Engineering</h3>
+                    <p class="text-slate-400 leading-relaxed font-light text-sm">
+                        Robust architectures and extreme code optimization, designed to support complex operational loads with minimal latency and resource consumption.
                     </p>
-                    <div class="p-6 bg-white/5 rounded-3xl border border-white/5 mb-8">
-                        <div class="text-sm font-bold text-electricBlue mb-2">Featured Asset: FirmApp</div>
-                        <p class="text-xs text-slate-500 leading-relaxed">A secure PDF scanning and signing ecosystem with offline-first processing, showing our capability in secure utilities.</p>
-                    </div>
-                    <a href="https://firmapp.arandulabs.dev" target="_blank" class="block text-center w-full py-4 rounded-2xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all">Explore FirmApp</a>
                 </div>
 
-                <!-- FinTech & Analytics -->
-                <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col h-full border-t-4 border-t-electricBlue/40 group">
-                    <div class="w-14 h-14 mb-8 rounded-2xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-7 h-7 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- Digital Consulting -->
+                <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full border-t-4 border-t-electricBlue/40 group">
+                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-black mb-6">FinTech & Analytical Solutions</h3>
-                    <p class="text-slate-400 mb-10 flex-grow leading-relaxed font-light">
-                        Architecture of financial modeling, asset management indicators, and mathematical tools for professional investment tracking.
+                    <h3 class="text-xl font-black mb-4">Digital Consulting</h3>
+                    <p class="text-slate-400 leading-relaxed font-light text-sm">
+                        We align technical decisions with business goals, providing expert advisory in digital transformation and systems integration.
                     </p>
-                    <div class="p-6 bg-white/5 rounded-3xl border border-white/5 mb-8">
-                        <!-- Ajuste 6: Credible privacy communication -->
-                        <div class="text-sm font-bold text-electricBlue mb-2">Data Ownership Principles</div>
-                        <p class="text-xs text-slate-500 leading-relaxed">We design local-first storage models to guarantee complete data confidentiality and regulatory compliance.</p>
-                    </div>
-                    <button class="w-full py-4 rounded-2xl bg-electricBlue/10 border border-electricBlue/20 text-electricBlue font-bold hover:bg-electricBlue hover:text-dark transition-all">View Solutions</button>
                 </div>
 
-                <!-- UI Systems -->
-                <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col h-full group">
-                    <div class="w-14 h-14 mb-8 rounded-2xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-7 h-7 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- Compliance & Security -->
+                <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
+                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
-                    <h3 class="text-2xl font-black mb-6">Interactive UI & Immersive Systems</h3>
-                    <p class="text-slate-400 mb-10 flex-grow leading-relaxed font-light">
-                        Developing high-fidelity interactive interfaces, real-time dashboards, and high-usability customer engagement solutions.
+                    <h3 class="text-xl font-black mb-4">Compliance & Security</h3>
+                    <p class="text-slate-400 leading-relaxed font-light text-sm">
+                        Development under advanced security standards, data encryption, and local-first processing to guarantee privacy and regulatory compliance.
                     </p>
-                    <div class="p-6 bg-white/5 rounded-3xl border border-white/5 mb-8">
-                        <div class="text-sm font-bold text-electricBlue mb-2">UX Optimization</div>
-                        <p class="text-xs text-slate-500 leading-relaxed">Sub-second latency interfaces engineered for high performance, zero intrusive tracking, and exceptional usability.</p>
+                </div>
+
+                <!-- Custom Development -->
+                <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
+                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
-                    <button class="w-full py-4 rounded-2xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all">Explore Solutions</button>
+                    <h3 class="text-xl font-black mb-4">Custom Development</h3>
+                    <p class="text-slate-400 leading-relaxed font-light text-sm">
+                        Bespoke systems and custom development services structured for optimal API integration and long-term scalability.
+                    </p>
                 </div>
             </div>
         </div>
@@ -379,7 +366,7 @@
                 <!-- Prisma Noticias -->
                 <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col md:flex-row items-center gap-8 group">
                     <div class="w-28 h-28 flex-shrink-0 rounded-[2rem] overflow-hidden border border-white/10 group-hover:border-electricBlue transition-all duration-500 bg-[#0B0E14] flex items-center justify-center p-3">
-                        <img src="assets/images/prisma_logo.png" alt="Prisma Noticias Logo" class="w-full h-full object-contain">
+                        <img src="assets/images/prisma_logo.png" alt="Prisma Noticias Logo" class="w-full h-full object-contain rounded-2xl">
                     </div>
                     <div class="flex-grow">
                         <div class="flex items-center gap-3 mb-2">
@@ -387,7 +374,7 @@
                             <span class="text-[10px] font-bold uppercase tracking-wider bg-electricBlue/10 text-electricBlue px-2.5 py-1 rounded-full border border-electricBlue/20">Android</span>
                         </div>
                         <p class="text-slate-400 mb-6 leading-relaxed font-light text-sm">
-                            An intelligent, privacy-first news reader and LATAM press aggregator revealing editorial spectrums and media blindspots.
+                            LATAM press aggregator with intelligent news grouping and explicit treatment of the political spectrum of each editorial line. All in a 100% anonymous and free environment.
                         </p>
                         <a href="https://prisma.arandulabs.dev" target="_blank" class="inline-block px-6 py-3 rounded-xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all text-xs">Visit Prisma</a>
                     </div>
