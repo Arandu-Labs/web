@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arandu Labs LLC | Software Engineering & B2B Technology Consulting</title>
-    <meta name="description" content="Arandu Labs LLC provides software engineering, technical infrastructure solutions, and custom development services for enterprise-grade digital solutions.">
+    <meta name="description"
+        content="Arandu Labs LLC provides software engineering, technical infrastructure solutions, and custom development services for enterprise-grade digital solutions.">
     <meta name="author" content="Arandu Labs LLC">
     <link rel="canonical" href="https://arandulabs.dev/">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Arandu Labs LLC | Software Engineering & Technology Consulting">
     <meta property="og:site_name" content="Arandu Labs LLC" />
-    <meta property="og:description" content="Enterprise software engineering and technical infrastructure solutions based in the United States.">
+    <meta property="og:description"
+        content="Enterprise software engineering and technical infrastructure solutions based in the United States.">
     <meta property="og:url" content="https://arandulabs.dev">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://arandulabs.dev/assets/images/logo.png">
@@ -24,13 +27,14 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N3KLTWL');
     </script>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <!-- Google Fonts: Inter & Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -55,31 +59,37 @@
             background-color: #0a0a0b;
             color: #f8fafc;
         }
+
         .glass {
             background: rgba(10, 10, 11, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         .glow-hover:hover {
             box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
             border-color: rgba(34, 211, 238, 0.3);
             transform: translateY(-4px);
         }
+
         .text-gradient {
             background: linear-gradient(to right, #22d3ee, #3b82f6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .hero-bg {
             background-image: linear-gradient(rgba(10, 10, 11, 0.8), rgba(10, 10, 11, 0.9)), url('./assets/images/hero-bg.jpg');
             background-size: cover;
             background-position: center;
         }
+
         .section-divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
         }
+
         /* Ajuste 10: Dynamic Elements */
         .blob {
             position: absolute;
@@ -91,31 +101,39 @@
             z-index: -1;
             animation: float 20s infinite alternate;
         }
+
         @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(100px, 50px) scale(1.1); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(100px, 50px) scale(1.1);
+            }
         }
+
         .blob-2 {
             top: 20%;
             right: -10%;
             animation-duration: 25s;
             animation-delay: -5s;
         }
+
         .blob-3 {
             bottom: 10%;
             left: -5%;
             animation-duration: 30s;
             animation-delay: -10s;
         }
-
     </style>
 </head>
+
 <body class="font-sans antialiased overflow-x-hidden">
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3KLTWL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3KLTWL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
 
 
     <!-- Header / Nav -->
@@ -124,12 +142,17 @@
             <!-- Logo Section -->
             <div class="flex items-center gap-4">
                 <div class="relative group">
-                    <div class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <img src="assets/images/logo.png" alt="Arandu Labs Logo" class="relative w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                    <div
+                        class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <img src="assets/images/logo.png" alt="Arandu Labs Logo"
+                        class="relative w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-xl md:text-2xl font-black tracking-tighter leading-none">Arandu Labs</span>
-                    <span class="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation Hub</span>
+                    <span
+                        class="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation
+                        Hub</span>
                 </div>
             </div>
 
@@ -137,7 +160,8 @@
             <div class="hidden lg:flex gap-10 text-sm font-bold text-white">
                 <a href="#solutions" class="hover:text-electricBlue transition-all">Services & Expertise</a>
                 <a href="#portfolio" class="hover:text-electricBlue transition-all">Applications Portfolio</a>
-                <a href="en/founder-letter.html" class="text-electricBlue/80 hover:text-electricBlue transition-all">Founder's Letter</a>
+                <a href="en/founder-letter.html"
+                    class="text-electricBlue/80 hover:text-electricBlue transition-all">Founder's Letter</a>
                 <a href="#team" class="hover:text-electricBlue transition-all">Team</a>
                 <a href="#contact" class="hover:text-electricBlue transition-all">Contact</a>
             </div>
@@ -146,62 +170,81 @@
             <div class="flex items-center gap-3 md:gap-8">
                 <!-- Language Flags (Always visible, compact on mobile) -->
                 <div class="flex gap-3 text-xs font-bold items-center border-l border-white/10 pl-4 h-8">
-                    <a href="es/index.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
-                        <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="22" alt="Spain" class="rounded-sm shadow-sm">
+                    <a href="es/index.html"
+                        class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="22"
+                            alt="Spain" class="rounded-sm shadow-sm">
                     </a>
-                    <span class="flex items-center text-white bg-white/5 px-1.5 py-0.5 rounded-md border border-white/10">
-                        <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="22" alt="USA" class="rounded-sm shadow-sm">
+                    <span
+                        class="flex items-center text-white bg-white/5 px-1.5 py-0.5 rounded-md border border-white/10">
+                        <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="22"
+                            alt="USA" class="rounded-sm shadow-sm">
                     </span>
-                    <a href="pt/index.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
-                        <img src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="22" alt="Brasil" class="rounded-sm shadow-sm">
+                    <a href="pt/index.html"
+                        class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="22"
+                            alt="Brasil" class="rounded-sm shadow-sm">
                     </a>
                 </div>
 
 
 
                 <!-- Mobile Menu Toggle -->
-                <button id="mobile-menu-toggle" class="lg:hidden p-2 text-white hover:text-electricBlue transition-colors group">
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden p-2 text-white hover:text-electricBlue transition-colors group">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Drawer (Premium Redesign) -->
-        <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full sm:w-80 bg-dark z-[60] lg:hidden flex flex-col p-10 transform translate-x-full transition-transform duration-500 ease-out border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.8)]">
+        <div id="mobile-menu"
+            class="fixed inset-y-0 right-0 w-full sm:w-80 bg-dark z-[60] lg:hidden flex flex-col p-10 transform translate-x-full transition-transform duration-500 ease-out border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.8)]">
             <div class="flex items-center justify-between mb-16">
                 <img src="assets/images/logo.png" alt="Arandu Labs Logo" class="w-10 h-10 object-contain">
                 <button id="mobile-menu-close" class="text-white hover:text-electricBlue transition-colors p-2">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
             </div>
-            
+
             <div class="flex flex-col gap-8 text-white">
-                <a href="#solutions" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
-                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a href="#solutions"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     Services & Expertise
                 </a>
-                <a href="#portfolio" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
-                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a href="#portfolio"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     Applications Portfolio
                 </a>
-                <a href="#team" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
-                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a href="#team"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     Team
                 </a>
-                <a href="en/founder-letter.html" class="mobile-link text-2xl font-bold tracking-tight text-electricBlue flex items-center gap-4 group">
+                <a href="en/founder-letter.html"
+                    class="mobile-link text-2xl font-bold tracking-tight text-electricBlue flex items-center gap-4 group">
                     <span class="w-2 h-2 bg-electricBlue rounded-full opacity-100 transition-opacity"></span>
                     Founder's Letter
                 </a>
-                <a href="#contact" class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
-                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <a href="#contact"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     Contact
                 </a>
             </div>
-            
+
             <div class="mt-auto pt-10 border-t border-white/5">
 
                 <div class="mt-8 text-center text-slate-500 text-xs font-medium tracking-widest uppercase">
@@ -210,7 +253,9 @@
             </div>
         </div>
         <!-- Overlay backdrop -->
-        <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden"></div>
+        <div id="mobile-menu-backdrop"
+            class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden">
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -226,56 +271,9 @@
                 <span class="text-gradient">Enterprise Software Engineering & B2B Consulting</span>
             </h1>
             <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-0 font-light">
-                We architect high-performance custom development services and technical infrastructure solutions that drive efficiency, scalability, and security for modern businesses.
+                We architect high-performance custom development services and technical infrastructure solutions that
+                drive efficiency, scalability, and security for modern businesses.
             </p>
-        </div>
-    </section>
-
-    <!-- Philosophy (Features) -->
-    <section id="philosophy" class="py-24 px-6 bg-dark">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
-                <!-- Lightweight -->
-                <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center p-6 md:p-8 glass rounded-[2rem] md:rounded-3xl border border-white/5 hover:border-electricBlue/20 transition-all gap-4 md:gap-0">
-                    <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 md:mb-6 rounded-xl md:rounded-2xl bg-electricBlue/10 flex items-center justify-center text-electricBlue">
-                        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="text-base md:text-lg font-bold mb-1 md:mb-3">Software Engineering</h3>
-                        <p class="text-xs md:text-sm text-slate-400 leading-relaxed font-light">Robust architectures and extreme code optimization designed to handle enterprise workloads with minimal resource footprint.</p>
-                    </div>
-                </div>
-                <!-- Direct Solutions -->
-                <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center p-6 md:p-8 glass rounded-[2rem] md:rounded-3xl border border-white/5 hover:border-electricBlue/20 transition-all gap-4 md:gap-0">
-                    <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 md:mb-6 rounded-xl md:rounded-2xl bg-electricBlue/10 flex items-center justify-center text-electricBlue">
-                        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="text-base md:text-lg font-bold mb-1 md:mb-3">Digital Consulting</h3>
-                        <p class="text-xs md:text-sm text-slate-400 leading-relaxed font-light">Strategic advisory and systems integration. We align advanced technical solutions with specific business objectives.</p>
-                    </div>
-                </div>
-                <!-- Accessibility -->
-                <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center p-6 md:p-8 glass rounded-[2rem] md:rounded-3xl border border-white/5 hover:border-electricBlue/20 transition-all gap-4 md:gap-0">
-                    <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 md:mb-6 rounded-xl md:rounded-2xl bg-electricBlue/10 flex items-center justify-center text-electricBlue">
-                        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="text-base md:text-lg font-bold mb-1 md:mb-3">Compliance & Security</h3>
-                        <p class="text-xs md:text-sm text-slate-400 leading-relaxed font-light">Security-first design, secure local-first data processing, and compliance-driven architectures to ensure absolute data privacy.</p>
-                    </div>
-                </div>
-                <!-- Polished Details -->
-                <div class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center p-6 md:p-8 glass rounded-[2rem] md:rounded-3xl border border-white/5 hover:border-electricBlue/20 transition-all gap-4 md:gap-0">
-                    <div class="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 md:mb-6 rounded-xl md:rounded-2xl bg-electricBlue/10 flex items-center justify-center text-electricBlue">
-                        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="text-base md:text-lg font-bold mb-1 md:mb-3">Custom Development</h3>
-                        <p class="text-xs md:text-sm text-slate-400 leading-relaxed font-light">Tailor-made software solutions designed for high performance, API integrations, and long-term scalability.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -291,45 +289,72 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Software Engineering -->
                 <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
-                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <div
+                        class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-black mb-4">Software Engineering</h3>
                     <p class="text-slate-400 leading-relaxed font-light text-sm">
-                        Robust architectures and extreme code optimization, designed to support complex operational loads with minimal latency and resource consumption.
+                        Robust architectures and extreme code optimization, designed to support complex operational
+                        loads with minimal latency and resource consumption.
                     </p>
                 </div>
 
                 <!-- Digital Consulting -->
-                <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full border-t-4 border-t-electricBlue/40 group">
-                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <div
+                    class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full border-t-4 border-t-electricBlue/40 group">
+                    <div
+                        class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-black mb-4">Digital Consulting</h3>
                     <p class="text-slate-400 leading-relaxed font-light text-sm">
-                        We align technical decisions with business goals, providing expert advisory in digital transformation and systems integration.
+                        We align technical decisions with business goals, providing expert advisory in digital
+                        transformation and systems integration.
                     </p>
                 </div>
 
                 <!-- Compliance & Security -->
                 <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
-                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    <div
+                        class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-black mb-4">Compliance & Security</h3>
                     <p class="text-slate-400 leading-relaxed font-light text-sm">
-                        Development under advanced security standards, data encryption, and local-first processing to guarantee privacy and regulatory compliance.
+                        Development under advanced security standards, data encryption, and local-first processing to
+                        guarantee privacy and regulatory compliance.
                     </p>
                 </div>
 
                 <!-- Custom Development -->
                 <div class="glass p-8 rounded-[2rem] glow-hover transition-all duration-500 flex flex-col h-full group">
-                    <div class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
-                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <div
+                        class="w-12 h-12 mb-6 rounded-xl bg-slate-800 flex items-center justify-center group-hover:bg-electricBlue transition-colors duration-500">
+                        <svg class="w-6 h-6 group-hover:text-dark transition-colors" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-black mb-4">Custom Development</h3>
                     <p class="text-slate-400 leading-relaxed font-light text-sm">
-                        Bespoke systems and custom development services structured for optimal API integration and long-term scalability.
+                        Bespoke systems and custom development services structured for optimal API integration and
+                        long-term scalability.
                     </p>
                 </div>
             </div>
@@ -341,42 +366,56 @@
         <div class="max-w-7xl mx-auto">
             <div class="mb-20 text-center">
                 <h2 class="text-4xl md:text-5xl font-black mb-6">Mobile Applications Portfolio</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto font-light">Explore our custom mobile developments designed for efficiency, utility, and privacy.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto font-light">Explore our custom mobile developments designed
+                    for efficiency, utility, and privacy.</p>
                 <div class="w-24 h-1.5 bg-electricBlue rounded-full mx-auto mt-6"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-10">
                 <!-- FirmApp -->
-                <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col md:flex-row items-center gap-8 group">
-                    <div class="w-28 h-28 flex-shrink-0 rounded-[2rem] overflow-hidden border border-white/10 group-hover:border-electricBlue transition-all duration-500">
+                <div
+                    class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col md:flex-row items-center gap-8 group">
+                    <div
+                        class="w-28 h-28 flex-shrink-0 rounded-[2rem] overflow-hidden border border-white/10 group-hover:border-electricBlue transition-all duration-500">
                         <img src="assets/images/firmapp_icon.png" alt="FirmApp Logo" class="w-full h-full object-cover">
                     </div>
                     <div class="flex-grow">
                         <div class="flex items-center gap-3 mb-2">
                             <h3 class="text-2xl font-black">FirmApp</h3>
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-electricBlue/10 text-electricBlue px-2.5 py-1 rounded-full border border-electricBlue/20">Android</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-electricBlue/10 text-electricBlue px-2.5 py-1 rounded-full border border-electricBlue/20">Android</span>
                         </div>
                         <p class="text-slate-400 mb-6 leading-relaxed font-light text-sm">
-                            A secure, offline-first PDF scanning and signing ecosystem. Manage, sign, and store documents with complete local data privacy.
+                            A secure, offline-first PDF scanning and signing ecosystem. Manage, sign, and store
+                            documents with complete local data privacy.
                         </p>
-                        <a href="https://firmapp.arandulabs.dev" class="inline-block px-6 py-3 rounded-xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all text-xs">Visit FirmApp</a>
+                        <a href="https://firmapp.arandulabs.dev"
+                            class="inline-block px-6 py-3 rounded-xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all text-xs">Visit
+                            FirmApp</a>
                     </div>
                 </div>
 
                 <!-- Prisma Noticias -->
-                <div class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col md:flex-row items-center gap-8 group">
-                    <div class="w-28 h-28 flex-shrink-0 rounded-[2rem] overflow-hidden border border-white/10 group-hover:border-electricBlue transition-all duration-500 bg-[#0B0E14] flex items-center justify-center p-3">
-                        <img src="assets/images/prisma_logo.png" alt="Prisma Noticias Logo" class="w-full h-full object-contain rounded-2xl">
+                <div
+                    class="glass p-10 rounded-[2.5rem] glow-hover transition-all duration-500 flex flex-col md:flex-row items-center gap-8 group">
+                    <div
+                        class="w-28 h-28 flex-shrink-0 rounded-[2rem] overflow-hidden border border-white/10 group-hover:border-electricBlue transition-all duration-500 bg-[#0B0E14] flex items-center justify-center p-3">
+                        <img src="assets/images/prisma_logo.png" alt="Prisma Noticias Logo"
+                            class="w-full h-full object-contain rounded-2xl">
                     </div>
                     <div class="flex-grow">
                         <div class="flex items-center gap-3 mb-2">
                             <h3 class="text-2xl font-black">Prisma Noticias</h3>
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-electricBlue/10 text-electricBlue px-2.5 py-1 rounded-full border border-electricBlue/20">Android</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-wider bg-electricBlue/10 text-electricBlue px-2.5 py-1 rounded-full border border-electricBlue/20">Android</span>
                         </div>
                         <p class="text-slate-400 mb-6 leading-relaxed font-light text-sm">
-                            LATAM press aggregator with intelligent news grouping and explicit treatment of the political spectrum of each editorial line. All in a 100% anonymous and free environment.
+                            LATAM press aggregator with intelligent news grouping and explicit treatment of the
+                            political spectrum of each editorial line. All in a 100% anonymous and free environment.
                         </p>
-                        <a href="https://prisma.arandulabs.dev" class="inline-block px-6 py-3 rounded-xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all text-xs">Visit Prisma</a>
+                        <a href="https://prisma.arandulabs.dev"
+                            class="inline-block px-6 py-3 rounded-xl border border-white/10 hover:border-electricBlue hover:text-electricBlue font-bold transition-all text-xs">Visit
+                            Prisma</a>
                     </div>
                 </div>
             </div>
@@ -388,7 +427,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="mb-24 text-center">
                 <h2 class="text-4xl font-black mb-6">Our Team</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto font-light">A multidisciplinary team focused on digital excellence.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto font-light">A multidisciplinary team focused on digital
+                    excellence.</p>
                 <div class="w-24 h-1.5 bg-electricBlue rounded-full mx-auto mt-6"></div>
             </div>
 
@@ -397,51 +437,75 @@
                 <div class="text-center group">
                     <div class="relative inline-block mb-10">
                         <!-- Ajuste 8: Meeting Photo & LinkedIn -->
-                        <div class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 rotate-3 group-hover:rotate-0">
-                            <img src="assets/images/team_julian_new.jpg" alt="Julian Ricardi" class="w-full h-full object-cover">
+                        <div
+                            class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 rotate-3 group-hover:rotate-0">
+                            <img src="assets/images/team_julian_new.jpg" alt="Julian Ricardi"
+                                class="w-full h-full object-cover">
                         </div>
-                        <a href="https://www.linkedin.com/in/julian-m-ricardi-35706a40/" target="_blank" class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl hover:scale-110 transition-transform">
-                            <svg class="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <a href="https://www.linkedin.com/in/julian-m-ricardi-35706a40/" target="_blank"
+                            class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-dark" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
                         </a>
                     </div>
                     <h3 class="text-2xl font-black mb-3 italic">Julian M. Ricardi</h3>
                     <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">CEO & Founder</p>
                     <p class="text-slate-400 text-sm leading-relaxed px-6 font-light">
-                        Economist and researcher, specialized in investment projects, government management, and capital markets. Consultant for international organizations.
+                        Economist and researcher, specialized in investment projects, government management, and capital
+                        markets. Consultant for international organizations.
                     </p>
                 </div>
 
                 <!-- Cecilia Gil -->
                 <div class="text-center group">
                     <div class="relative inline-block mb-10">
-                        <div class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 -rotate-3 group-hover:rotate-0">
-                            <img src="assets/images/team_cecilia.jpg" alt="Cecilia Gil" class="w-full h-full object-cover">
+                        <div
+                            class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 -rotate-3 group-hover:rotate-0">
+                            <img src="assets/images/team_cecilia.jpg" alt="Cecilia Gil"
+                                class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl">
-                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                        <div
+                            class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
+                                </path>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-black mb-3 italic">Ma. Cecilia Gil</h3>
-                    <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">Lead Designer & UI/UX</p>
+                    <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">Lead Designer &
+                        UI/UX</p>
                     <p class="text-slate-400 text-sm leading-relaxed px-6 font-light">
-                        Specialized in application design and web tools with high visual impact. Photographer and Visual Artist.
+                        Specialized in application design and web tools with high visual impact. Photographer and Visual
+                        Artist.
                     </p>
                 </div>
 
                 <!-- Luis Gomez -->
                 <div class="text-center group">
                     <div class="relative inline-block mb-10">
-                        <div class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 rotate-6 group-hover:rotate-0">
+                        <div
+                            class="w-56 h-56 rounded-[3rem] overflow-hidden border-2 border-white/10 group-hover:border-electricBlue transition-all duration-500 rotate-6 group-hover:rotate-0">
                             <img src="assets/images/team_luis.jpg" alt="Luis Gomez" class="w-full h-full object-cover">
                         </div>
-                        <div class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl">
-                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        <div
+                            class="absolute -bottom-4 -right-4 w-12 h-12 bg-electricBlue rounded-2xl flex items-center justify-center border-4 border-dark shadow-xl">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                </path>
+                            </svg>
                         </div>
                     </div>
                     <h3 class="text-2xl font-black mb-3 italic">Luis Cesar Gomez</h3>
-                    <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">Marketing & Customer Relations</p>
+                    <p class="text-electricBlue text-xs font-black mb-6 tracking-[0.2em] uppercase">Marketing & Customer
+                        Relations</p>
                     <p class="text-slate-400 text-sm leading-relaxed px-6 font-light">
-                        Engineer specialized in finance and marketing. In charge of the global marketing strategy and ensuring strong, trusted relationships with our clients.
+                        Engineer specialized in finance and marketing. In charge of the global marketing strategy and
+                        ensuring strong, trusted relationships with our clients.
                     </p>
                 </div>
             </div>
@@ -458,14 +522,21 @@
                         <span class="text-3xl font-black tracking-tighter">Arandu Labs LLC</span>
                     </div>
                     <p class="text-slate-500 max-w-sm leading-relaxed mb-10 font-light text-lg">
-                        Empowering enterprises with highly optimized software engineering, custom development services, and technical infrastructure solutions. Engineering reliability, efficiency, and compliance.
+                        Empowering enterprises with highly optimized software engineering, custom development services,
+                        and technical infrastructure solutions. Engineering reliability, efficiency, and compliance.
                     </p>
                     <div class="space-y-6">
                         <div class="flex items-center gap-4 text-slate-400 group">
-                            <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-electricBlue group-hover:bg-electricBlue group-hover:text-dark transition-all">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div
+                                class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-electricBlue group-hover:bg-electricBlue group-hover:text-dark transition-all">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
                             </div>
-                            <a href="mailto:soporte@arandulabs.dev" class="text-lg font-medium hover:text-electricBlue transition-colors">soporte@arandulabs.dev</a>
+                            <a href="mailto:soporte@arandulabs.dev"
+                                class="text-lg font-medium hover:text-electricBlue transition-colors">soporte@arandulabs.dev</a>
                         </div>
                     </div>
                 </div>
@@ -473,28 +544,38 @@
                     <div class="absolute top-0 right-0 w-32 h-32 bg-electricBlue/10 blur-3xl -mr-16 -mt-16"></div>
                     <!-- Contenedor de Éxito (Manejado por Formspree) -->
                     <div data-fs-success class="hidden flex flex-col items-center text-center py-12">
-                        <div class="w-20 h-20 bg-electricBlue/10 rounded-full flex items-center justify-center text-electricBlue mb-6">
-                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <div
+                            class="w-20 h-20 bg-electricBlue/10 rounded-full flex items-center justify-center text-electricBlue mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
                         </div>
                         <h4 class="text-2xl font-black mb-4 italic">Message Sent!</h4>
                         <p class="text-slate-400 font-light">We'll get back to you shortly at the email provided.</p>
                     </div>
 
                     <!-- Contenedor de Error (Manejado por Formspree) -->
-                    <div data-fs-error class="hidden text-red-400 text-sm mb-6 p-4 bg-red-400/10 border border-red-400/20 rounded-2xl">
+                    <div data-fs-error
+                        class="hidden text-red-400 text-sm mb-6 p-4 bg-red-400/10 border border-red-400/20 rounded-2xl">
                         Oops! There was a problem sending your message. Please try again.
                     </div>
 
                     <form id="contact-form" class="space-y-6">
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                            <input type="email" name="email" required data-fs-field placeholder="name@company.com" class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
+                            <input type="email" name="email" required data-fs-field placeholder="name@company.com"
+                                class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all">
                         </div>
                         <div class="space-y-2">
                             <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Message</label>
-                            <textarea rows="6" name="message" required data-fs-field placeholder="Tell us briefly about your idea..." class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
+                            <textarea rows="6" name="message" required data-fs-field
+                                placeholder="Tell us briefly about your idea..."
+                                class="w-full px-5 py-4 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:border-electricBlue/50 text-slate-200 transition-all"></textarea>
                         </div>
-                        <button type="submit" data-fs-submit-btn class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20 disabled:opacity-50 disabled:cursor-not-allowed">Send Message</button>
+                        <button type="submit" data-fs-submit-btn
+                            class="w-full py-5 bg-electricBlue text-dark font-black rounded-2xl hover:opacity-90 active:scale-[0.98] transition-all shadow-xl shadow-electricBlue/20 disabled:opacity-50 disabled:cursor-not-allowed">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
@@ -503,8 +584,8 @@
 
             <div class="flex flex-col items-center gap-8 text-center">
                 <div class="text-slate-600 text-sm font-medium tracking-wide">
-                    &copy; 2026 Arandu Labs LLC | 
-                    <a href="en/privacy.html" class="hover:text-electricBlue transition-colors">Privacy Policy</a> | 
+                    &copy; 2026 Arandu Labs LLC |
+                    <a href="en/privacy.html" class="hover:text-electricBlue transition-colors">Privacy Policy</a> |
                     <a href="en/terms.html" class="hover:text-electricBlue transition-colors">Terms of Service</a>
                 </div>
                 <!-- Ajuste 9: Built with Precision removed -->
@@ -514,10 +595,10 @@
 
     <script>
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { 
-            formElement: '#contact-form', 
+        formspree('initForm', {
+            formElement: '#contact-form',
             formId: 'mzdovkyr',
-            onSuccess: function() {
+            onSuccess: function () {
                 console.log('Form submitted successfully');
             }
         });
@@ -549,13 +630,18 @@
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-slate-900 border-t border-white/10 p-6 z-[100] hidden flex-col md:flex-row items-center justify-between gap-4 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
+    <div id="cookie-banner"
+        class="fixed bottom-0 left-0 w-full bg-slate-900 border-t border-white/10 p-6 z-[100] hidden flex-col md:flex-row items-center justify-between gap-4 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
         <p class="text-sm text-slate-300">
-            We use cookies to ensure you get the best experience on our website. By clicking "Accept", you agree to our use of cookies for analytics and personalized content. <a href="privacy.html" class="text-electricBlue underline hover:text-white transition-colors">Learn more</a>.
+            We use cookies to ensure you get the best experience on our website. By clicking "Accept", you agree to our
+            use of cookies for analytics and personalized content. <a href="privacy.html"
+                class="text-electricBlue underline hover:text-white transition-colors">Learn more</a>.
         </p>
         <div class="flex gap-4 shrink-0">
-            <button id="decline-cookies" class="px-6 py-2 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-colors text-sm font-bold">Decline</button>
-            <button id="accept-cookies" class="px-6 py-2 rounded-xl bg-electricBlue text-dark hover:opacity-90 transition-opacity text-sm font-bold shadow-lg shadow-electricBlue/20">Accept</button>
+            <button id="decline-cookies"
+                class="px-6 py-2 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-colors text-sm font-bold">Decline</button>
+            <button id="accept-cookies"
+                class="px-6 py-2 rounded-xl bg-electricBlue text-dark hover:opacity-90 transition-opacity text-sm font-bold shadow-lg shadow-electricBlue/20">Accept</button>
         </div>
     </div>
     <script>
@@ -563,7 +649,7 @@
             const banner = document.getElementById('cookie-banner');
             const acceptBtn = document.getElementById('accept-cookies');
             const declineBtn = document.getElementById('decline-cookies');
-            
+
             if (!localStorage.getItem('cookieConsent')) {
                 banner.classList.remove('hidden');
                 banner.classList.add('flex');
@@ -596,4 +682,5 @@
         });
     </script>
 </body>
+
 </html>
