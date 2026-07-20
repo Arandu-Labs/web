@@ -84,50 +84,119 @@
     <!-- Header / Nav -->
     <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/10 bg-dark lg:bg-dark/95 lg:backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="relative">
-                        <div class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <img src="../assets/images/logo.png" alt="Arandu Labs Logo" class="relative w-10 h-10 md:w-12 md:h-12 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+            <!-- Seção Logo -->
+            <a href="index.html" class="flex items-center gap-4 group">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-2 bg-electricBlue/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
                     </div>
-                    <div class="flex flex-col">
-                        <span class="text-lg md:text-xl font-black tracking-tighter leading-none">Arandu Labs</span>
-                        <span class="text-[8px] uppercase tracking-[0.3em] text-electricBlue font-bold hidden sm:block">Innovation Hub</span>
-                    </div>
-                </a>
-            </div>
+                    <img src="../assets/images/logo.png" alt="Arandu Labs Logo"
+                        class="relative w-12 h-12 md:w-14 md:h-14 object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl md:text-2xl font-black tracking-tighter leading-none text-white">Arandu Labs</span>
+                    <span
+                        class="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-electricBlue font-bold">Innovation
+                        Hub</span>
+                </div>
+            </a>
 
-            <!-- Desktop Links -->
+            <!-- Links Desktop -->
             <div class="hidden lg:flex gap-10 text-sm font-bold text-white">
-                <a href="index.html#filosofia" class="hover:text-electricBlue transition-all">Filosofia</a>
-                <a href="index.html#solucoes" class="hover:text-electricBlue transition-all">Soluções</a>
+                <a href="index.html#solucoes" class="hover:text-electricBlue transition-all">Serviços e Especialidades</a>
+                <a href="index.html#portfolio" class="hover:text-electricBlue transition-all">Portfólio de Aplicativos</a>
+                <a href="carta-fundador.html"
+                    class="text-electricBlue/80 hover:text-electricBlue transition-all">Carta do Fundador</a>
                 <a href="index.html#equipe" class="hover:text-electricBlue transition-all">Equipe</a>
                 <a href="#contacto" class="hover:text-electricBlue transition-all">Contato</a>
             </div>
 
-            <!-- Right Section: Back to Home & Language -->
-            <div class="flex items-center gap-3 md:gap-6">
-                <!-- Enlace explícito para volver al portal -->
-                <a href="index.html" class="text-xs md:text-sm font-bold text-slate-300 hover:text-electricBlue transition-colors flex items-center gap-1">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                    </svg>
-                    <span>Início</span>
-                </a>
-
+            <!-- Seção Idioma -->
+            <div class="flex items-center gap-3 md:gap-8">
                 <!-- Selectores de Idioma -->
-                <div class="flex gap-2 text-xs font-bold items-center border-l border-white/10 pl-3 h-6">
-                    <a href="../es/carta-fundador.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100 scale-95">
-                        <img src="https://flagcdn.com/w20/es.png" width="18" alt="Espanha" class="rounded-sm shadow-sm">
+                <div class="flex gap-3 text-xs font-bold items-center border-l border-white/10 pl-4 h-8">
+                    <a href="../es/carta-fundador.html"
+                        class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/es.png" srcset="https://flagcdn.com/w40/es.png 2x" width="22"
+                            alt="Espanha" class="rounded-sm shadow-sm">
                     </a>
-                    <a href="../en/founder-letter.html" class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100 scale-95">
-                        <img src="https://flagcdn.com/w20/us.png" width="18" alt="USA" class="rounded-sm shadow-sm">
+                    <a href="../en/founder-letter.html"
+                        class="flex items-center hover:scale-110 transition-transform opacity-60 hover:opacity-100">
+                        <img src="https://flagcdn.com/w20/us.png" srcset="https://flagcdn.com/w40/us.png 2x" width="22"
+                            alt="USA" class="rounded-sm shadow-sm">
                     </a>
-                    <span class="flex items-center text-white bg-white/5 px-1 py-0.5 rounded border border-white/10 scale-95">
-                        <img src="https://flagcdn.com/w20/br.png" width="18" alt="Brasil" class="rounded-sm shadow-sm">
+                    <span
+                        class="flex items-center text-white bg-white/5 px-1.5 py-0.5 rounded-md border border-white/10">
+                        <img src="https://flagcdn.com/w20/br.png" srcset="https://flagcdn.com/w40/br.png 2x" width="22"
+                            alt="Brasil" class="rounded-sm shadow-sm">
                     </span>
                 </div>
+
+                <!-- Toggle Menu Móvel -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden p-2 text-white hover:text-electricBlue transition-colors group">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
+        </div>
+
+        <!-- Menu Lateral Móvel -->
+        <div id="mobile-menu"
+            class="fixed inset-y-0 right-0 w-full sm:w-80 bg-dark z-[60] lg:hidden flex flex-col p-10 transform translate-x-full transition-transform duration-500 ease-out border-l border-white/10 shadow-[-20px_0_40px_rgba(0,0,0,0.8)]">
+            <div class="flex items-center justify-between mb-16">
+                <img src="../assets/images/logo.png" alt="Arandu Labs Logo" class="w-10 h-10 object-contain">
+                <button id="mobile-menu-close" class="text-white hover:text-electricBlue transition-colors p-2">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-8 text-white">
+                <a href="index.html#solucoes"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Serviços e Especialidades
+                </a>
+                <a href="index.html#portfolio"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Portfólio de Aplicativos
+                </a>
+                <a href="carta-fundador.html"
+                    class="mobile-link text-2xl font-bold tracking-tight text-electricBlue flex items-center gap-4 group">
+                    <span class="w-2 h-2 bg-electricBlue rounded-full opacity-100 transition-opacity"></span>
+                    Carta do Fundador
+                </a>
+                <a href="index.html#equipe"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Equipe
+                </a>
+                <a href="#contacto"
+                    class="mobile-link text-2xl font-bold tracking-tight hover:text-electricBlue transition-colors flex items-center gap-4 group">
+                    <span
+                        class="w-2 h-2 bg-electricBlue rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    Contato
+                </a>
+            </div>
+
+            <div class="mt-auto pt-10 border-t border-white/5">
+                <div class="mt-8 text-center text-slate-500 text-xs font-medium tracking-widest uppercase">
+                    Arandu Labs LLC
+                </div>
+            </div>
+        </div>
+        <!-- Fondo oscuro overlay -->
+        <div id="mobile-menu-backdrop"
+            class="fixed inset-0 bg-black/60 z-50 opacity-0 pointer-events-none transition-opacity duration-500 lg:hidden">
         </div>
     </nav>
 
@@ -302,5 +371,31 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const backdrop = document.getElementById('mobile-menu-backdrop');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        function openMenu() {
+            menu.classList.remove('translate-x-full');
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeMenu() {
+            menu.classList.add('translate-x-full');
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        toggleBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        backdrop.addEventListener('click', closeMenu);
+        links.forEach(link => link.addEventListener('click', closeMenu));
+    </script>
 </body>
 </html>
