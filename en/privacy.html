@@ -180,32 +180,33 @@
         <div class="legal-section">
             <h2>2. CATEGORIES OF DATA COLLECTED</h2>
             <p>
-                We process data based on the principle of <strong>data minimization</strong>. We only collect information that is strictly necessary for the technical operation and improvement of our Services.
+                We process data based on the principle of <strong>data minimization</strong>. We only collect and process information that is strictly necessary for technical operation, security, and improvement of our Services.
             </p>
 
-            <h3>2.1 Device Information</h3>
+            <h3>2.1 Automatic Collection via Advertising SDK Infrastructure</h3>
             <p>
-                When you access our Services, we may collect technical information about the device you use. This include:
+                To ensure accessibility and keep our Services free (such as Prisma Noticias and free tiers of FirmApp), Arandu Labs LLC integrates the Google Mobile Ads SDK (AdMob) and third-party mediation platforms. By default and inherent to their technical operation, these systems collect, encrypt in transit (via TLS/HTTPS), and automatically share with Google and authorized partners the following telemetry data points for ad delivery, behavioral analytics, and systemic fraud prevention:
             </p>
             <ul>
-                <li><strong>Hardware Model:</strong> Such as the manufacturer and model name of your smartphone or tablet.</li>
-                <li><strong>Operating System:</strong> Version and platform (iOS, Android, Windows).</li>
-                <li><strong>Unique Identifiers:</strong> Advertising IDs (IDFA for iOS or AAID for Android) and unique device tokens used for push notifications or analytics.</li>
-                <li><strong>Network Information:</strong> General geographical location (country level) derived from IP address, and connection type (e.g., Wi-Fi or LTE).</li>
+                <li><strong>IP Addresses:</strong> Invariably collected to estimate the device's general geographic location (country/city granularity), measure ad performance, and, subject to applicable user consent, orchestrate ad campaign personalization.</li>
+                <li><strong>User Interaction Metrics:</strong> Collection of user interface events, including app launch/exit logs, touch interaction coordinates (taps) on advertising elements, and video view retention metrics.</li>
+                <li><strong>Diagnostic & System Telemetry:</strong> Extraction of data related to app performance and third-party SDK stability, including load latencies, interface hang rates, and device energy consumption footprints, used in aggregate for bug mitigation.</li>
+                <li><strong>Unique Device and Account Identifiers:</strong> Systematic extraction of the Android Advertising ID (AAID), the iOS Identifier for Advertisers (IDFA), the App Set ID structured for developer ecosystem tracking, and, where applicable, cryptographic session identifiers for accounts signed in on the device.</li>
             </ul>
+
             <div class="highlight-box !bg-amber-50 !border-amber-100">
                 <h3 class="!mt-0 !text-amber-900 font-bold">Precise Location Data</h3>
                 <p class="text-amber-800">
-                    <strong>Location Data Collection:</strong> Some of our Services may collect precise geographic location information (such as GPS, Wi-Fi, or cell tower data) when you explicitly grant permission through your device settings.
+                    <strong>Location Data Collection:</strong> Some of our Services may collect precise geographic location information (such as GPS, Wi-Fi, or cell tower data) only when you explicitly grant permission through your device settings.
                 </p>
                 <p class="text-amber-800 !mb-0 font-medium">
-                    <strong>Purposes:</strong> If you grant permission, we may use precise location data for ad personalization, analytics, and attribution purposes, and this data may be shared with our advertising partners. All location data is transmitted via encrypted channels.
+                    <strong>Purposes:</strong> If you grant permission, precise location data may be used for ad personalization, analytics, and attribution by our advertising partners. All location data is transmitted via encrypted channels.
                 </p>
             </div>
 
             <h3>2.2 Usage Data & Performance Metrics</h3>
             <p>
-                To maintain the stability and quality of our Services, we collect anonymous metrics through third-party SDKs (Software Development Kits), specifically Firebase:
+                To maintain the stability and quality of our Services, we collect anonymous metrics through third-party SDKs, specifically Firebase:
             </p>
             <ul>
                 <li><strong>Technical Logs:</strong> Detailed crash reports (Firebase Crashlytics) to identify and fix bugs.</li>
@@ -228,26 +229,35 @@
         <div class="legal-section">
             <h2>3. COOKIES AND TRACKING TECHNOLOGIES</h2>
             <p>
-                Arandu Labs LLC and our trusted partners use various technologies to collect and process information as part of our Services. These technologies include:
+                Arandu Labs LLC and our advertising technology partners use various technologies to collect and process information as part of our Services. These technologies include:
             </p>
             <ul>
                 <li><strong>Cookies:</strong> Small text files stored on your device that help us recognize you and remember your preferences.</li>
                 <li><strong>Web Beacons:</strong> Small electronic images embedded in web pages and emails that allow us to track usage and deliver content.</li>
-                <li><strong>IP Addresses:</strong> Numerical identifiers assigned to your device when connecting to the internet, used for analytics and security purposes.</li>
+                <li><strong>IP Addresses:</strong> Numerical identifiers assigned to your device when connecting to the internet, used for analytics, security, ad serving, and performance measurement.</li>
                 <li><strong>Device Identifiers:</strong> Unique identifiers such as Advertising IDs (IDFA for iOS, AAID for Android) used for advertising and analytics.</li>
                 <li><strong>SDKs:</strong> Software Development Kits integrated into our mobile applications to enable third-party services.</li>
             </ul>
-            <p>
-                <strong>Third-Party Cookies:</strong> Third parties, including Google and our advertising partners, may place and read cookies on your browser or device as a result of ad serving on our websites and applications. These third parties may collect information about your online activities across different websites and applications to serve personalized advertisements and analyze usage patterns.
-            </p>
+
             <div class="highlight-box !bg-blue-50 !border-blue-100">
-                <h3 class="!mt-0 !text-blue-900 font-bold">Google's Use of Data</h3>
+                <h3 class="!mt-0 !text-blue-900 font-bold">Strict Use of Cookies, Local Storage & Identifiers (Notice for EEA, UK & Swiss Users)</h3>
                 <p class="text-blue-800">
-                    For information about how Google uses data when you use our partners' sites or apps, please visit:
+                    In strict accordance with the ePrivacy Directive, the General Data Protection Regulation (GDPR), and analogous Swiss data protection regulations, please be advised that Arandu Labs LLC, operating in conjunction with our listed third-party advertising technology providers (including prominently Google LLC), places, accesses, reads, and uses persistent and session cookies, web beacons, tracking pixels, and other local storage technologies within your browser cache or secure device storage.
                 </p>
-                <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-bold hover:underline">
+                <p class="text-blue-800">
+                    The legal basis for enabling these technologies is your prior affirmative consent. If granted, these technologies process your personal data to: <strong>(1)</strong> Serve personalized ads based on browsing habits and prior interest inferences; <strong>(2)</strong> Control advertising frequency capping; and <strong>(3)</strong> Measure cross-campaign advertising effectiveness and attribution.
+                </p>
+                <h4 class="text-blue-900 font-bold mt-4 mb-2 text-sm uppercase tracking-wide">Google's Commercial Use of Data</h4>
+                <p class="text-blue-800 mb-2">
+                    You acknowledge that Google processes your information according to its own terms. To understand how Google uses personal data collected through our infrastructure, you must review:
+                </p>
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" class="text-brandBlue font-bold hover:underline inline-block mb-4">
                     How Google uses data when you use our partners' sites or apps
                 </a>
+                <h4 class="text-blue-900 font-bold mt-2 mb-2 text-sm uppercase tracking-wide">Advanced IP Address Processing (2026 Framework)</h4>
+                <p class="text-blue-800 !mb-0 font-medium">
+                    Users located in the EEA, UK, and Switzerland who grant ad personalization consent explicitly acknowledge and agree that automatically collected IP addresses are processed by Google and trusted partners for ad measurement, delivery, and algorithmic personalization under <strong>Feature 3 (Identify devices based on automatically transmitted information)</strong> of the IAB Europe Transparency and Consent Framework (TCF).
+                </p>
             </div>
         </div>
 
@@ -284,55 +294,60 @@
 
         <!-- Section 6: Third-Party Disclosures -->
         <div class="legal-section">
-            <h2>6. DETAILED THIRD-PARTY DISCLOSURE</h2>
+            <h2>6. COMPREHENSIVE THIRD-PARTY TAXONOMY & PROVIDERS</h2>
             <p>
-                Arandu Labs LLC does not sell your personal data. However, we integrate specialized services from trusted third-party partners to provide essential functionalities and support our free model through advertising.
+                When you interact with Arandu Labs LLC Services, our software architecture facilitates the concurrent collection of telemetry information (Third-Party Data) by external corporate data controllers integrated via SDKs. These third parties operate under their own independent privacy policies, acting as distinct data controllers responsible for aggregation, monetization, and network intelligence processing.
             </p>
 
-            <h3>6.1 Google Cloud & Firebase Ecosystem</h3>
+            <h3>6.1 Primary Infrastructure Providers</h3>
             <div class="partner-card">
-                <h4 class="font-bold text-privacyPrimary">AdMob by Google</h4>
-                <p class="text-sm mb-2 leading-relaxed">Used to display advertisements. Google, as a third-party vendor, uses cookies and device identifiers to serve ads based on your prior visits to our Services or other sites/apps on the Internet. Google's use of advertising cookies and device identifiers enables it and its partners to serve ads to you based on your visits to our Services and/or other websites/applications. You can learn more about how Google handles data by visiting <a href="https://policies.google.com/technologies/partner-sites" class="text-brandBlue hover:underline" target="_blank">How Google Uses Data</a>.
+                <h4 class="font-bold text-privacyPrimary">Google LLC (AdMob, Google Play Services & Google Analytics)</h4>
+                <p class="text-sm mb-2 leading-relaxed">Core behavioral advertising infrastructure, platform services, and performance telemetry. Google uses cookies and device identifiers to serve ads and analyze app stability.
                     <br>
-                    <a href="https://policies.google.com/privacy" class="text-brandBlue hover:underline" target="_blank">Privacy Policy</a>
+                    <a href="https://policies.google.com/privacy" class="text-brandBlue hover:underline" target="_blank">Google Privacy Policy</a> | 
+                    <a href="https://policies.google.com/technologies/partner-sites" class="text-brandBlue hover:underline" target="_blank">Partner Data Responsibility</a>
                 </p>
             </div>
             <div class="partner-card">
                 <h4 class="font-bold text-privacyPrimary">Appodeal</h4>
-                <p class="text-sm mb-2 leading-relaxed">This application uses Appodeal as a third-party advertising platform. Appodeal may collect and use data to serve personalized advertisements. For more information, please review the Appodeal Privacy Policy:
+                <p class="text-sm mb-2 leading-relaxed">This application uses Appodeal as a third-party advertising mediation platform. Appodeal may collect and use data to serve personalized advertisements.
                     <br>
                     <a href="https://www.appodeal.com/privacy-policy" class="text-brandBlue hover:underline" target="_blank">Appodeal Privacy Policy</a>
                 </p>
             </div>
             <div class="partner-card">
-                <h4 class="font-bold text-privacyPrimary">Google Analytics & Firebase Crashlytics</h4>
-                <p class="text-sm mb-2 leading-relaxed">Used to monitor app performance and stability. All data is aggregated and anonymized. 
-                    <a href="https://firebase.google.com/support/privacy" class="text-brandBlue hover:underline">Firebase Privacy</a>
+                <h4 class="font-bold text-privacyPrimary">Firebase (Google LLC)</h4>
+                <p class="text-sm mb-2 leading-relaxed">Used to monitor app performance and stability (Crashlytics). All data is aggregated and anonymized. 
+                    <br>
+                    <a href="https://firebase.google.com/support/privacy" class="text-brandBlue hover:underline" target="_blank">Firebase Privacy</a>
                 </p>
             </div>
 
-            <h3>6.2 Advertising Partners</h3>
+            <h3>6.2 Advertising Mediation & Network Partners</h3>
             <p>
-                Our advertising partners may collect anonymized data through their SDKs to serve and measure ads:
+                Our current mediation partners, subject to periodic compliance audits, include:
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="partner-card">
-                    <h4 class="font-bold text-sm">AppLovin</h4>
-                    <p class="text-xs text-slate-500">Ad serving and performance measurement.</p>
+                    <h4 class="font-bold text-sm">AppLovin Corporation</h4>
+                    <p class="text-xs text-slate-500">Algorithmic advertising inventory mediation engine.</p>
                 </div>
                 <div class="partner-card">
-                    <h4 class="font-bold text-sm">Vungle / Liftoff</h4>
-                    <p class="text-xs text-slate-500">Video ad delivery and metrics.</p>
+                    <h4 class="font-bold text-sm">Liftoff / Vungle</h4>
+                    <p class="text-xs text-slate-500">Rich video ad delivery and attribution metrics.</p>
                 </div>
                 <div class="partner-card">
                     <h4 class="font-bold text-sm">StartApp</h4>
-                    <p class="text-xs text-slate-500">Monetization and advertising analytics.</p>
+                    <p class="text-xs text-slate-500">In-app monetization and advertising analytics.</p>
                 </div>
                 <div class="partner-card">
                     <h4 class="font-bold text-sm">AdColony</h4>
-                    <p class="text-xs text-slate-500">In-app video advertising solutions.</p>
+                    <p class="text-xs text-slate-500">In-app rich media and video advertising solutions.</p>
                 </div>
             </div>
+            <p class="text-xs text-slate-500 mt-4 leading-relaxed">
+                <em>Arandu Labs LLC exercises commercially reasonable efforts to contractually require that these operators comply with GDPR and applicable U.S. privacy laws. However, Arandu Labs expressly disclaims liability for secondary processing, cross-selling, or deep profile aggregation performed by these third-party networks outside our application environment. We encourage proactive review of their respective policies.</em>
+            </p>
         </div>
 
         <!-- Section 7: Personalized Advertising -->
@@ -373,19 +388,46 @@
 
         <!-- Section 9: User Rights -->
         <div class="legal-section">
-            <h2>9. YOUR RIGHTS (GDPR / CCPA)</h2>
+            <h2>9. USER RIGHTS & DYNAMIC CONSENT REVOCATION</h2>
             <p>
-                Regardless of your location, Arandu Labs LLC respects your privacy rights. Depending on your jurisdiction (such as California or the European Union), you may have the following rights:
+                Regardless of your location, Arandu Labs LLC respects your privacy rights. Depending on your jurisdiction (such as California or the European Union), you hold the following statutory rights:
             </p>
             <ul>
                 <li><strong>Right of Access:</strong> You can request a copy of the technical data we hold about you.</li>
                 <li><strong>Right to Rectification:</strong> You can request the correction of inaccurate data.</li>
                 <li><strong>Right to Erasure (Right to be Forgotten):</strong> You can request the deletion of your data, provided it is not required for legal compliance.</li>
                 <li><strong>Right to Portability:</strong> You can request your data in a structured, commonly used, and machine-readable format.</li>
-                <li><strong>Right to Object/Opt-Out:</strong> You have the right to opt-out of personalized advertising through your device settings.</li>
+                <li><strong>Right to Object/Opt-Out:</strong> You hold the inalienable right to opt out of personalized advertising.</li>
             </ul>
-            <p>
-                To exercise any of these rights, please contact us at <a href="mailto:soporte@arandulabs.dev" class="text-brandBlue font-bold">soporte@arandulabs.dev</a>. We will respond to your request within the timeframe required by applicable law.
+
+            <div class="highlight-box !bg-blue-50 !border-blue-100">
+                <h3 class="!mt-0 !text-blue-900 font-bold">Dynamic Advertising Consent Management & Revocation Architecture</h3>
+                <p class="text-blue-800">
+                    Consent granted by you for telemetry collection and algorithmic ad personalization is not an irrevocable contract. We guarantee your sovereign right to revoke, limit, or modify your consent at any time with zero friction.
+                </p>
+                <p class="text-blue-800">
+                    To modify your privacy preferences in real time, you can access the application's internal settings menu (e.g., navigating to <strong>[Settings &gt; Privacy & Data Settings]</strong> within Prisma Noticias or FirmApp) and select <strong>"Manage Ad Consent Options"</strong>. This interactive trigger instantly reinvokes the User Messaging Platform (UMP SDK) panel, allowing you to withdraw consent globally or configure granular preferences for specific analytics and advertising vendors listed in the IAB TCF ecosystem.
+                </p>
+                <p class="text-blue-800 !mb-0 font-medium">
+                    Additionally, you retain complete hardware-level control to halt advertising identifier transmission directly via your device operating system settings (App Tracking Transparency on iOS or Reset/Delete Advertising ID on Android).
+                </p>
+            </div>
+
+            <div class="highlight-box !bg-amber-50 !border-amber-100">
+                <h3 class="!mt-0 !text-amber-900 font-bold">Rights under CPRA and U.S. State Laws (Official "Do Not Sell or Share My Personal Information" Notice)</h3>
+                <p class="text-amber-800">
+                    In strict accordance with United States state privacy regulations, including the California Consumer Privacy Act as amended by the California Privacy Rights Act (CPRA) and the Virginia Consumer Data Protection Act (VCDPA), the automated exchange of unique device identifiers (Ad IDs), IP addresses, and in-app behavioral telemetry with our advertising network partners (Google AdMob, AppLovin, Vungle) for cross-context behavioral advertising legally constitutes a "sale" or "sharing" of personal information.
+                </p>
+                <p class="text-amber-800">
+                    Arandu Labs LLC receives no direct monetary compensation for this transfer, operating strictly within programmatic mediation ecosystems. Nonetheless, you hold the absolute right to opt out of this data dissemination.
+                </p>
+                <p class="text-amber-800 !mb-0 font-medium">
+                    To exercise your statutory right to <strong>"Do Not Sell or Share My Personal Information"</strong>, you may utilize the in-app privacy controls or enable Global Privacy Control (GPC) signals transmitted by your browser/device. At the infrastructure level, Arandu Labs integrates support for the IAB Global Privacy Platform (GPP) and transmits Restricted Data Processing (RDP) signals to Google servers upon opt-out.
+                </p>
+            </div>
+
+            <p class="text-sm">
+                To exercise any of these rights, please contact us at <a href="mailto:soporte@arandulabs.dev" class="text-brandBlue font-bold">soporte@arandulabs.dev</a>. We will respond within the timeframe required by applicable law.
             </p>
         </div>
 
