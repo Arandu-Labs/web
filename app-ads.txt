@@ -14,7 +14,8 @@ bidmachine.io,466,DIRECT
 google.com, pub-2735724217774538, DIRECT, f08c47fec0942fa0
 
 #Meta-Audience
-facebook.com, 1844604784307148, DIRECT, c3e20eee3f780d68
+facebook.com, 1736161704532069, DIRECT, c3e20eee3f780d68
+facebook.com, 1888601731808416, DIRECT, c3e20eee3f780d68
 
 #Add other networks if applicable
 
