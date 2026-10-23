@@ -1,5 +1,9 @@
 #Updated 31.03.2026
 
+#vungle
+
+vungle.com, 6adb50e3298c0ae23ec36940, DIRECT, c107d686becd2d77
+
 #Appodeal
 
 appodeal.com, 265837, DIRECT
