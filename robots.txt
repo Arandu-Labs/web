@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+User-agent: facebookexternalhit/1.1
+Disallow:
+
+User-agent: Facebot
+Disallow:
+
 Sitemap: https://arandulabs.dev/sitemap.xml
