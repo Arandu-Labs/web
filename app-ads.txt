@@ -10,6 +10,12 @@ facebook.com, 1888601731808416, DIRECT, c3e20eee3f780d68
 # Property ID 3
 facebook.com, 1736161704532069, DIRECT, c3e20eee3f780d68
 
+# Facebook App ID - Prisma Noticias
+facebook.com, 1876690140444631, DIRECT, c3e20eee3f780d68
+
+# Facebook App ID - FirmApp
+facebook.com, 1185771894146728, DIRECT, c3e20eee3f780d68
+
 # ==========================================
 # YANDEX ADVERTISING NETWORK
 # ==========================================
