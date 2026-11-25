@@ -1,4 +1,9 @@
 # ==========================================
+# UNITY LEVELPLAY / IRONSOURCE
+# ==========================================
+ironsource.com, 704119, DIRECT, f08c47fec0942fa0
+
+# ==========================================
 # META AUDIENCE NETWORK
 # ==========================================
 # Business ID
@@ -15,6 +20,7 @@ facebook.com, 1876690140444631, DIRECT, c3e20eee3f780d68
 
 # Facebook App ID - Prisma Noticias (Audience Network)
 facebook.com, 27595713640125055, DIRECT, c3e20eee3f780d68
+facebook.com, 27595713640125055, DIRECT, c3e20e66ac1b28f0
 
 # Facebook App ID - FirmApp
 facebook.com, 1185771894146728, DIRECT, c3e20eee3f780d68
@@ -22,6 +28,7 @@ facebook.com, 1185771894146728, DIRECT, c3e20eee3f780d68
 # ==========================================
 # YANDEX ADVERTISING NETWORK
 # ==========================================
+yandex.ru, 19733667, DIRECT
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 27842, RESELLER, 0bfd66d529a55807
